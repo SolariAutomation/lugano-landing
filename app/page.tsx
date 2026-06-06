@@ -160,8 +160,8 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto flex items-center justify-between text-sm text-gray-400">
           <span>© 2026 Lugano Automation</span>
           <div className="flex gap-6">
-            <a href="#" className="hover:text-gray-600">Terms</a>
-            <a href="#" className="hover:text-gray-600">Privacy</a>
+            <a href="/terms" className="hover:text-gray-600">Terms</a>
+            <a href="/privacy" className="hover:text-gray-600">Privacy</a>
             <Link href={APP_URL} className="hover:text-gray-600">Log in</Link>
           </div>
         </div>
