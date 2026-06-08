@@ -7,40 +7,40 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-white text-gray-900">
 
-      {/* Nav */}
-      <nav className="sticky top-0 z-50 bg-white/90 backdrop-blur-sm border-b border-gray-100 px-6 py-4">
+      {/* Nav — blue */}
+      <nav className="sticky top-0 z-50 bg-[#00406e] px-6 py-4">
         <div className="max-w-6xl mx-auto flex items-center justify-between">
-          <span className="font-bold text-xl tracking-tight">Lugano Automation</span>
+          <span className="font-bold text-xl tracking-tight text-white">Lugano Automation</span>
           <div className="hidden md:flex items-center gap-8">
-            <a href="#how-it-works" className="text-sm text-gray-500 hover:text-gray-900 transition">How it works</a>
-            <a href="#features" className="text-sm text-gray-500 hover:text-gray-900 transition">Features</a>
-            <a href="#scenarios" className="text-sm text-gray-500 hover:text-gray-900 transition">Scenarios</a>
+            <a href="#how-it-works" className="text-sm text-white/70 hover:text-white transition">How it works</a>
+            <a href="#features" className="text-sm text-white/70 hover:text-white transition">Features</a>
+            <a href="#scenarios" className="text-sm text-white/70 hover:text-white transition">Scenarios</a>
           </div>
         </div>
       </nav>
 
-      {/* Hero */}
-      <section className="max-w-5xl mx-auto px-6 pt-20 pb-16 text-center">
-        <div className="inline-flex items-center gap-2 bg-gray-50 border border-gray-200 rounded-full px-4 py-1.5 text-xs text-gray-600 mb-6 font-medium">
-          <span className="w-1.5 h-1.5 rounded-full bg-[#00406e] inline-block animate-pulse"></span>
-          Built for car dealerships
-        </div>
-        <h1 className="text-5xl md:text-6xl font-bold leading-[1.1] tracking-tight mb-6">
-          Your leads are going cold.<br />
-          <span className="text-gray-400">We fix that automatically.</span>
-        </h1>
-        <p className="text-xl text-gray-500 max-w-2xl mx-auto mb-10 leading-relaxed">
-          Lugano sends AI-personalized follow-up emails so no lead goes cold — missed calls, web forms, service inquiries, trade-ins. Your team steps in only when a customer replies.
-        </p>
-        <div className="flex items-center justify-center">
-          <a href="#how-it-works" className="text-[#00406e] hover:text-[#00325a] text-sm font-medium transition">
+      {/* Hero — blue background */}
+      <section className="bg-[#00406e] px-6 pt-20 pb-24 text-center">
+        <div className="max-w-5xl mx-auto">
+          <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-1.5 text-xs text-white/80 mb-6 font-medium">
+            <span className="w-1.5 h-1.5 rounded-full bg-white inline-block animate-pulse"></span>
+            Built for car dealerships
+          </div>
+          <h1 className="text-5xl md:text-6xl font-bold leading-[1.1] tracking-tight mb-6 text-white">
+            Your leads are going cold.<br />
+            <span className="text-white/60">We fix that automatically.</span>
+          </h1>
+          <p className="text-xl text-white/70 max-w-2xl mx-auto mb-10 leading-relaxed">
+            Lugano sends AI-personalized follow-up emails so no lead goes cold — missed calls, web forms, service inquiries, trade-ins. Your team steps in only when a customer replies.
+          </p>
+          <a href="#how-it-works" className="text-white/60 hover:text-white text-sm font-medium transition">
             See how it works ↓
           </a>
         </div>
       </section>
 
       {/* Stats strip */}
-      <section className="border-y border-gray-100 bg-gray-50 py-10">
+      <section className="bg-[#003058] py-10">
         <div className="max-w-4xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           {[
             { stat: "10 min", label: "First email after missed call" },
@@ -49,8 +49,8 @@ export default function HomePage() {
             { stat: "0", label: "Emails written manually" },
           ].map((item) => (
             <div key={item.stat}>
-              <p className="text-3xl font-bold text-gray-900">{item.stat}</p>
-              <p className="text-sm text-gray-500 mt-1">{item.label}</p>
+              <p className="text-3xl font-bold text-white">{item.stat}</p>
+              <p className="text-sm text-white/60 mt-1">{item.label}</p>
             </div>
           ))}
         </div>
