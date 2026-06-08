@@ -100,9 +100,8 @@ export default function HomePage() {
               },
             ].map((item) => (
               <div key={item.step} className="bg-white border border-gray-200 rounded-2xl p-8 relative">
-                <span className="text-5xl font-black text-gray-100 absolute top-6 right-6">{item.step}</span>
-                <div className="w-10 h-10 rounded-xl bg-[#e6f0f7] flex items-center justify-center mb-4">
-                  <span className="text-[#00406e] font-bold text-sm">{item.step}</span>
+                  <div className="w-10 h-10 rounded-xl bg-[#e6f0f7] flex items-center justify-center mb-4">
+                  <span className="text-[#00406e] font-bold text-sm">{item.step.replace('0', '')}</span>
                 </div>
                 <h3 className="font-semibold text-lg text-gray-900 mb-2">{item.title}</h3>
                 <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
