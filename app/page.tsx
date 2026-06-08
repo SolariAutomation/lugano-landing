@@ -33,7 +33,7 @@ export default function HomePage() {
           <span className="text-gray-400">We fix that automatically.</span>
         </h1>
         <p className="text-xl text-gray-500 max-w-2xl mx-auto mb-10 leading-relaxed">
-          Lugano sends AI-personalized follow-up emails to every lead that slips through the cracks — missed calls, web forms, service inquiries. Automatically. Your team only steps in when a customer replies.
+          Lugano sends AI-personalized follow-up emails so no lead goes cold — missed calls, web forms, service inquiries, trade-ins. Your team steps in only when a customer replies.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <Link href={APP_URL} className="bg-[#00406e] text-white px-8 py-4 rounded-xl text-base font-medium hover:bg-[#00325a] transition w-full sm:w-auto text-center">
