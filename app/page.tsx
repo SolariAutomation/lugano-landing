@@ -67,7 +67,7 @@ export default function HomePage() {
       </section>
 
       {/* How it works */}
-      <section id="how-it-works" className="bg-gray-50 py-20">
+      <section id="how-it-works" className="bg-[#e6f0f7] py-20">
         <div className="max-w-5xl mx-auto px-6">
           <AnimateIn>
           <div className="text-center mb-16">
@@ -134,7 +134,8 @@ export default function HomePage() {
       </section>
 
       {/* Features */}
-      <section id="features" className="max-w-6xl mx-auto px-6 py-20">
+      <section id="features" className="bg-white py-20">
+        <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold mb-4">Everything your team needs</h2>
           <p className="text-gray-500 text-lg">Not a generic CRM with email bolted on. Built specifically for dealership workflows.</p>
@@ -173,18 +174,19 @@ export default function HomePage() {
             },
           ].map((f, i) => (
             <AnimateIn key={f.title} delay={i * 80} direction="up">
-            <div className="border border-[#00406e]/30 rounded-2xl p-6 hover:shadow-sm transition h-full">
+            <div className="border border-[#00406e]/30 rounded-2xl p-6 hover:shadow-sm transition h-full hover:border-[#00406e]/60">
               <div className="w-2 h-2 rounded-full bg-[#00406e] mb-4"></div>
-              <h3 className="font-semibold text-gray-900 mb-2">{f.title}</h3>
+              <h3 className="font-semibold text-[#00406e] mb-2">{f.title}</h3>
               <p className="text-gray-500 text-sm leading-relaxed">{f.desc}</p>
             </div>
             </AnimateIn>
           ))}
         </div>
+        </div>
       </section>
 
       {/* Scenarios */}
-      <section id="scenarios" className="bg-gray-50 py-20">
+      <section id="scenarios" className="bg-[#e6f0f7] py-20">
         <div className="max-w-4xl mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Four scenarios, fully covered</h2>
@@ -220,7 +222,7 @@ export default function HomePage() {
               <AnimateIn key={s.name} delay={i * 100} direction="up">
                 <div className="bg-white border border-[#00406e]/30 rounded-2xl p-6 h-full">
                   <div className="flex items-start justify-between mb-3">
-                    <h3 className="font-semibold text-gray-900">{s.name}</h3>
+                    <h3 className="font-semibold text-[#00406e]">{s.name}</h3>
                     <span className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded-full">{s.dept}</span>
                   </div>
                   <p className="text-gray-500 text-sm mb-3 leading-relaxed">{s.desc}</p>
