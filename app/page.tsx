@@ -15,10 +15,6 @@ export default function HomePage() {
             <a href="#how-it-works" className="text-sm text-gray-500 hover:text-gray-900 transition">How it works</a>
             <a href="#features" className="text-sm text-gray-500 hover:text-gray-900 transition">Features</a>
             <a href="#scenarios" className="text-sm text-gray-500 hover:text-gray-900 transition">Scenarios</a>
-            <Link href={APP_URL} className="text-sm text-gray-500 hover:text-gray-900 transition">Sign in</Link>
-            <Link href={APP_URL} className="bg-[#00406e] text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-[#00325a] transition">
-              Get started
-            </Link>
           </div>
         </div>
       </nav>
@@ -36,11 +32,8 @@ export default function HomePage() {
         <p className="text-xl text-gray-500 max-w-2xl mx-auto mb-10 leading-relaxed">
           Lugano sends AI-personalized follow-up emails so no lead goes cold — missed calls, web forms, service inquiries, trade-ins. Your team steps in only when a customer replies.
         </p>
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <Link href={APP_URL} className="bg-[#00406e] text-white px-8 py-4 rounded-xl text-base font-medium hover:bg-[#00325a] transition w-full sm:w-auto text-center">
-            Start for free →
-          </Link>
-          <a href="#how-it-works" className="text-gray-500 hover:text-gray-900 text-sm transition">
+        <div className="flex items-center justify-center">
+          <a href="#how-it-works" className="text-[#00406e] hover:text-[#00325a] text-sm font-medium transition">
             See how it works ↓
           </a>
         </div>
@@ -239,18 +232,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="max-w-3xl mx-auto px-6 py-24 text-center">
-        <AnimateIn>
-        <h2 className="text-4xl font-bold mb-4">Ready to stop losing leads?</h2>
-        <p className="text-gray-500 mb-10 text-lg">
-          Set up in minutes. Your first lead gets a follow-up within 10 minutes of being added.
-        </p>
-        <Link href={APP_URL} className="bg-[#00406e] text-white px-10 py-4 rounded-xl text-base font-medium hover:bg-[#00325a] transition inline-block">
-          Get started for free →
-        </Link>
-        </AnimateIn>
-      </section>
+
 
       {/* Footer */}
       <footer className="border-t border-gray-100 py-10 px-6">
@@ -260,7 +242,6 @@ export default function HomePage() {
             <a href="/terms" className="hover:text-gray-600 transition">Terms</a>
             <a href="/privacy" className="hover:text-gray-600 transition">Privacy</a>
             <a href="mailto:support@luganoautomation.com" className="hover:text-gray-600 transition">Contact</a>
-            <Link href={APP_URL} className="hover:text-gray-600 transition">Log in</Link>
           </div>
         </div>
       </footer>
