@@ -1,4 +1,5 @@
 import Link from "next/link";
+import AnimateIn from "./components/AnimateIn";
 
 const APP_URL = "https://app.luganoautomation.com";
 
@@ -64,19 +65,23 @@ export default function HomePage() {
 
       {/* Problem section */}
       <section className="max-w-4xl mx-auto px-6 py-20 text-center">
-        <h2 className="text-3xl font-bold mb-6">Most leads never hear back.</h2>
-        <p className="text-gray-500 text-lg max-w-2xl mx-auto leading-relaxed">
-          A customer calls about an S4 and your team misses it. By the time someone follows up 2 days later, they&apos;ve already bought from the dealership down the street. This happens dozens of times a month at every dealership — and it&apos;s entirely preventable.
-        </p>
+        <AnimateIn>
+          <h2 className="text-3xl font-bold mb-6">Most leads never hear back.</h2>
+          <p className="text-gray-500 text-lg max-w-2xl mx-auto leading-relaxed">
+            A customer calls about an S4 and your team misses it. By the time someone follows up 2 days later, they&apos;ve already bought from the dealership down the street. This happens dozens of times a month at every dealership — and it&apos;s entirely preventable.
+          </p>
+        </AnimateIn>
       </section>
 
       {/* How it works */}
       <section id="how-it-works" className="bg-gray-50 py-20">
         <div className="max-w-5xl mx-auto px-6">
+          <AnimateIn>
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold mb-4">How it works</h2>
             <p className="text-gray-500 text-lg">Set it up once. It runs itself.</p>
           </div>
+          </AnimateIn>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
@@ -98,14 +103,16 @@ export default function HomePage() {
                 desc: "Follow-up 2 fires at day 3. Closing email at day 7. When they reply, everything stops and the right salesperson takes over.",
                 icon: "⚡",
               },
-            ].map((item) => (
-              <div key={item.step} className="bg-white border border-gray-200 rounded-2xl p-8 relative">
+            ].map((item, i) => (
+              <AnimateIn key={item.step} delay={i * 150} direction="up">
+              <div className="bg-white border border-gray-200 rounded-2xl p-8 relative h-full">
                   <div className="w-10 h-10 rounded-xl bg-[#e6f0f7] flex items-center justify-center mb-4">
                   <span className="text-[#00406e] font-bold text-sm">{item.step.replace('0', '')}</span>
                 </div>
                 <h3 className="font-semibold text-lg text-gray-900 mb-2">{item.title}</h3>
                 <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
               </div>
+              </AnimateIn>
             ))}
           </div>
 
@@ -171,12 +178,14 @@ export default function HomePage() {
               title: "Pipeline View",
               desc: "See where every lead stands, how many emails went out, who responded, and each salesperson's conversion numbers — all in one place.",
             },
-          ].map((f) => (
-            <div key={f.title} className="border border-gray-200 rounded-2xl p-6 hover:shadow-sm transition">
+          ].map((f, i) => (
+            <AnimateIn key={f.title} delay={i * 80} direction="up">
+            <div className="border border-gray-200 rounded-2xl p-6 hover:shadow-sm transition h-full">
               <div className="w-2 h-2 rounded-full bg-[#00406e] mb-4"></div>
               <h3 className="font-semibold text-gray-900 mb-2">{f.title}</h3>
               <p className="text-gray-500 text-sm leading-relaxed">{f.desc}</p>
             </div>
+            </AnimateIn>
           ))}
         </div>
       </section>
@@ -214,15 +223,17 @@ export default function HomePage() {
                 timing: "Email #1: Same day · Email #2: Day 3 · Closing: Day 7",
                 desc: "Had a test drive scheduled but didn't show. Offers to reschedule before the lead goes cold.",
               },
-            ].map((s) => (
-              <div key={s.name} className="bg-white border border-gray-200 rounded-2xl p-6">
-                <div className="flex items-start justify-between mb-3">
-                  <h3 className="font-semibold text-gray-900">{s.name}</h3>
-                  <span className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded-full">{s.dept}</span>
+            ].map((s, i) => (
+              <AnimateIn key={s.name} delay={i * 100} direction="up">
+                <div className="bg-white border border-gray-200 rounded-2xl p-6 h-full">
+                  <div className="flex items-start justify-between mb-3">
+                    <h3 className="font-semibold text-gray-900">{s.name}</h3>
+                    <span className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded-full">{s.dept}</span>
+                  </div>
+                  <p className="text-gray-500 text-sm mb-3 leading-relaxed">{s.desc}</p>
+                  <p className="text-xs text-gray-400 font-mono">{s.timing}</p>
                 </div>
-                <p className="text-gray-500 text-sm mb-3 leading-relaxed">{s.desc}</p>
-                <p className="text-xs text-gray-400 font-mono">{s.timing}</p>
-              </div>
+              </AnimateIn>
             ))}
           </div>
         </div>
@@ -230,6 +241,7 @@ export default function HomePage() {
 
       {/* CTA */}
       <section className="max-w-3xl mx-auto px-6 py-24 text-center">
+        <AnimateIn>
         <h2 className="text-4xl font-bold mb-4">Ready to stop losing leads?</h2>
         <p className="text-gray-500 mb-10 text-lg">
           Set up in minutes. Your first lead gets a follow-up within 10 minutes of being added.
@@ -237,6 +249,7 @@ export default function HomePage() {
         <Link href={APP_URL} className="bg-[#00406e] text-white px-10 py-4 rounded-xl text-base font-medium hover:bg-[#00325a] transition inline-block">
           Get started for free →
         </Link>
+        </AnimateIn>
       </section>
 
       {/* Footer */}
