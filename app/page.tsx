@@ -98,7 +98,7 @@ export default function HomePage() {
               },
             ].map((item, i) => (
               <AnimateIn key={item.step} delay={i * 150} direction="up">
-              <div className="bg-white border border-gray-200 rounded-2xl p-8 relative h-full">
+              <div className="bg-white border border-[#00406e]/30 rounded-2xl p-8 relative h-full">
                   <div className="w-10 h-10 rounded-xl bg-[#e6f0f7] flex items-center justify-center mb-4">
                   <span className="text-[#00406e] font-bold text-sm">{item.step.replace('0', '')}</span>
                 </div>
@@ -110,7 +110,7 @@ export default function HomePage() {
           </div>
 
           {/* Flow diagram */}
-          <div className="mt-16 bg-white border border-gray-200 rounded-2xl p-8">
+          <div className="mt-16 bg-white border border-[#00406e]/30 rounded-2xl p-8">
             <h3 className="font-semibold text-gray-900 mb-6 text-center">The full sequence, visualized</h3>
             <div className="flex items-center justify-between flex-wrap gap-4 text-center text-sm">
               {[
@@ -173,7 +173,7 @@ export default function HomePage() {
             },
           ].map((f, i) => (
             <AnimateIn key={f.title} delay={i * 80} direction="up">
-            <div className="border border-gray-200 rounded-2xl p-6 hover:shadow-sm transition h-full">
+            <div className="border border-[#00406e]/30 rounded-2xl p-6 hover:shadow-sm transition h-full">
               <div className="w-2 h-2 rounded-full bg-[#00406e] mb-4"></div>
               <h3 className="font-semibold text-gray-900 mb-2">{f.title}</h3>
               <p className="text-gray-500 text-sm leading-relaxed">{f.desc}</p>
@@ -218,7 +218,7 @@ export default function HomePage() {
               },
             ].map((s, i) => (
               <AnimateIn key={s.name} delay={i * 100} direction="up">
-                <div className="bg-white border border-gray-200 rounded-2xl p-6 h-full">
+                <div className="bg-white border border-[#00406e]/30 rounded-2xl p-6 h-full">
                   <div className="flex items-start justify-between mb-3">
                     <h3 className="font-semibold text-gray-900">{s.name}</h3>
                     <span className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded-full">{s.dept}</span>
