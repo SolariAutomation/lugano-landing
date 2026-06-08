@@ -3,6 +3,9 @@
 :root {
   --background: #ffffff;
   --foreground: #0a0a0a;
+  --brand: #00406e;
+  --brand-dark: #00325a;
+  --brand-light: #e6f0f7;
 }
 
 body {

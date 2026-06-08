@@ -15,7 +15,7 @@ export default function HomePage() {
             <a href="#features" className="text-sm text-gray-500 hover:text-gray-900 transition">Features</a>
             <a href="#scenarios" className="text-sm text-gray-500 hover:text-gray-900 transition">Scenarios</a>
             <Link href={APP_URL} className="text-sm text-gray-500 hover:text-gray-900 transition">Sign in</Link>
-            <Link href={APP_URL} className="bg-black text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-gray-800 transition">
+            <Link href={APP_URL} className="bg-[#00406e] text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-[#00325a] transition">
               Get started
             </Link>
           </div>
@@ -25,7 +25,7 @@ export default function HomePage() {
       {/* Hero */}
       <section className="max-w-5xl mx-auto px-6 pt-20 pb-16 text-center">
         <div className="inline-flex items-center gap-2 bg-gray-50 border border-gray-200 rounded-full px-4 py-1.5 text-xs text-gray-600 mb-6 font-medium">
-          <span className="w-1.5 h-1.5 rounded-full bg-green-500 inline-block animate-pulse"></span>
+          <span className="w-1.5 h-1.5 rounded-full bg-[#00406e] inline-block animate-pulse"></span>
           Built for car dealerships
         </div>
         <h1 className="text-5xl md:text-6xl font-bold leading-[1.1] tracking-tight mb-6">
@@ -36,7 +36,7 @@ export default function HomePage() {
           Lugano sends AI-personalized follow-up emails to every lead that slips through the cracks — missed calls, web forms, service inquiries. Automatically. Your team only steps in when a customer replies.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <Link href={APP_URL} className="bg-black text-white px-8 py-4 rounded-xl text-base font-medium hover:bg-gray-800 transition w-full sm:w-auto text-center">
+          <Link href={APP_URL} className="bg-[#00406e] text-white px-8 py-4 rounded-xl text-base font-medium hover:bg-[#00325a] transition w-full sm:w-auto text-center">
             Start for free →
           </Link>
           <a href="#how-it-works" className="text-gray-500 hover:text-gray-900 text-sm transition">
@@ -101,7 +101,9 @@ export default function HomePage() {
             ].map((item) => (
               <div key={item.step} className="bg-white border border-gray-200 rounded-2xl p-8 relative">
                 <span className="text-5xl font-black text-gray-100 absolute top-6 right-6">{item.step}</span>
-                <div className="text-3xl mb-4">{item.icon}</div>
+                <div className="w-10 h-10 rounded-xl bg-[#e6f0f7] flex items-center justify-center mb-4">
+                  <span className="text-[#00406e] font-bold text-sm">{item.step}</span>
+                </div>
                 <h3 className="font-semibold text-lg text-gray-900 mb-2">{item.title}</h3>
                 <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
               </div>
@@ -172,7 +174,7 @@ export default function HomePage() {
             },
           ].map((f) => (
             <div key={f.title} className="border border-gray-200 rounded-2xl p-6 hover:shadow-sm transition">
-              <div className="text-2xl mb-3">{f.icon}</div>
+              <div className="w-2 h-2 rounded-full bg-[#00406e] mb-4"></div>
               <h3 className="font-semibold text-gray-900 mb-2">{f.title}</h3>
               <p className="text-gray-500 text-sm leading-relaxed">{f.desc}</p>
             </div>
@@ -233,7 +235,7 @@ export default function HomePage() {
         <p className="text-gray-500 mb-10 text-lg">
           Set up in minutes. Your first lead gets a follow-up within 10 minutes of being added.
         </p>
-        <Link href={APP_URL} className="bg-black text-white px-10 py-4 rounded-xl text-base font-medium hover:bg-gray-800 transition inline-block">
+        <Link href={APP_URL} className="bg-[#00406e] text-white px-10 py-4 rounded-xl text-base font-medium hover:bg-[#00325a] transition inline-block">
           Get started for free →
         </Link>
       </section>
