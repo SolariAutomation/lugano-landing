@@ -1,131 +1,55 @@
-import Link from "next/link";
 import AnimateIn from "./components/AnimateIn";
 
+const BRAND = "#0057a8";
+const BRAND_DARK = "#004490";
+const BRAND_LIGHT = "#e8f0fa";
 const APP_URL = "https://app.luganoautomation.com";
 
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-white text-gray-900">
 
-      {/* Nav — blue */}
-      <nav className="sticky top-0 z-50 bg-[#00406e] px-6 py-4">
+      {/* Nav */}
+      <nav className="sticky top-0 z-50 px-6 py-4" style={{ backgroundColor: BRAND }}>
         <div className="max-w-6xl mx-auto flex items-center justify-between">
-          <span className="font-bold text-xl tracking-tight text-white">Lugano Automation</span>
+          <span className="font-bold text-2xl tracking-tight text-white">Lugano Automation</span>
           <div className="hidden md:flex items-center gap-8">
-            <a href="#how-it-works" className="text-sm text-white/70 hover:text-white transition">How it works</a>
-            <a href="#features" className="text-sm text-white/70 hover:text-white transition">Features</a>
-            <a href="#scenarios" className="text-sm text-white/70 hover:text-white transition">Scenarios</a>
+            <a href="#how-it-works" className="text-sm text-white/75 hover:text-white transition font-medium">How it works</a>
+            <a href="#features" className="text-sm text-white/75 hover:text-white transition font-medium">Features</a>
+            <a href="#scenarios" className="text-sm text-white/75 hover:text-white transition font-medium">Scenarios</a>
           </div>
         </div>
       </nav>
 
-      {/* Hero — blue background */}
-      <section className="bg-[#00406e] px-6 pt-20 pb-24 text-center">
-        <div className="max-w-5xl mx-auto">
-          <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-1.5 text-xs text-white/80 mb-6 font-medium">
+      {/* Hero */}
+      <section className="px-6 pt-24 pb-28" style={{ backgroundColor: BRAND }}>
+        <div className="max-w-6xl mx-auto">
+          <div className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-semibold mb-8 border border-white/20" style={{ backgroundColor: "rgba(255,255,255,0.12)", color: "rgba(255,255,255,0.85)" }}>
             <span className="w-1.5 h-1.5 rounded-full bg-white inline-block animate-pulse"></span>
-            Built for car dealerships
+            AI-Powered Lead Follow-Up for Car Dealerships
           </div>
-          <h1 className="text-5xl md:text-6xl font-bold leading-[1.1] tracking-tight mb-6 text-white">
-            Your leads are going cold.<br />
-            <span className="text-white/60">We fix that automatically.</span>
-          </h1>
-          <p className="text-xl text-white/70 max-w-2xl mx-auto mb-10 leading-relaxed">
-            Lugano sends AI-personalized follow-up emails so no lead goes cold — missed calls, web forms, service inquiries, trade-ins. Your team steps in only when a customer replies.
-          </p>
-          <a href="#how-it-works" className="text-white/60 hover:text-white text-sm font-medium transition">
-            See how it works ↓
-          </a>
-        </div>
-      </section>
-
-      {/* Stats strip */}
-      <section className="bg-[#003058] py-10">
-        <div className="max-w-4xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-          {[
-            { stat: "10 min", label: "First email after missed call" },
-            { stat: "4", label: "Follow-up scenarios covered" },
-            { stat: "3-step", label: "Automated per lead" },
-            { stat: "0", label: "Emails written manually" },
-          ].map((item) => (
-            <div key={item.stat}>
-              <p className="text-3xl font-bold text-white">{item.stat}</p>
-              <p className="text-sm text-white/60 mt-1">{item.label}</p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h1 className="text-6xl lg:text-7xl font-black leading-[1.0] tracking-tight mb-6 text-white">
+                Stop losing leads<br />to silence.
+              </h1>
+              <p className="text-xl text-white/70 leading-relaxed mb-8 max-w-lg">
+                Lugano sends AI-personalized follow-up emails the moment a lead goes cold — missed calls, web forms, service inquiries, trade-ins. Your team steps in only when someone replies.
+              </p>
+              <a href="#how-it-works" className="inline-flex items-center gap-2 text-white/70 hover:text-white font-medium text-sm transition">
+                See how it works ↓
+              </a>
             </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Problem section */}
-      <section className="max-w-4xl mx-auto px-6 py-20 text-center">
-        <AnimateIn>
-          <h2 className="text-3xl font-bold mb-6">Most leads never hear back.</h2>
-          <p className="text-gray-500 text-lg max-w-2xl mx-auto leading-relaxed">
-            A customer calls about an S4 and your team misses it. By the time someone follows up 2 days later, they&apos;ve already bought from the dealership down the street. This happens dozens of times a month at every dealership — and it&apos;s entirely preventable.
-          </p>
-        </AnimateIn>
-      </section>
-
-      {/* How it works */}
-      <section id="how-it-works" className="bg-[#e6f0f7] py-20">
-        <div className="max-w-5xl mx-auto px-6">
-          <AnimateIn>
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold mb-4">How it works</h2>
-            <p className="text-gray-500 text-lg">Set it up once. It runs itself.</p>
-          </div>
-          </AnimateIn>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              {
-                step: "01",
-                title: "Lead comes in",
-                desc: "Missed call, web form, service inquiry, or trade-in request. Add it manually or connect your existing system via webhook.",
-                icon: "📥",
-              },
-              {
-                step: "02",
-                title: "AI writes a personalized email",
-                desc: "Not a template. A real email referencing their name, the specific car they asked about, and how they reached out — sent within 10 minutes.",
-                icon: "✍️",
-              },
-              {
-                step: "03",
-                title: "Sequence runs automatically",
-                desc: "Follow-up 2 fires at day 3. Closing email at day 7. When they reply, everything stops and the right salesperson takes over.",
-                icon: "⚡",
-              },
-            ].map((item, i) => (
-              <AnimateIn key={item.step} delay={i * 150} direction="up">
-              <div className="bg-white border border-[#00406e]/30 rounded-2xl p-8 relative h-full">
-                  <div className="w-10 h-10 rounded-xl bg-[#e6f0f7] flex items-center justify-center mb-4">
-                  <span className="text-[#00406e] font-bold text-sm">{item.step.replace('0', '')}</span>
-                </div>
-                <h3 className="font-semibold text-lg text-gray-900 mb-2">{item.title}</h3>
-                <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
-              </div>
-              </AnimateIn>
-            ))}
-          </div>
-
-          {/* Flow diagram */}
-          <div className="mt-16 bg-white border border-[#00406e]/30 rounded-2xl p-8">
-            <h3 className="font-semibold text-gray-900 mb-6 text-center">The full sequence, visualized</h3>
-            <div className="flex items-center justify-between flex-wrap gap-4 text-center text-sm">
+            <div className="grid grid-cols-2 gap-4">
               {[
-                { label: "Lead created", sub: "Day 0", color: "bg-blue-100 text-blue-700" },
-                { label: "Email #1", sub: "10 min / Same day", color: "bg-yellow-100 text-yellow-700" },
-                { label: "Email #2", sub: "Day 3", color: "bg-orange-100 text-orange-700" },
-                { label: "Closing email", sub: "Day 7", color: "bg-purple-100 text-purple-700" },
-                { label: "Sequence ends", sub: "Or reply stops it", color: "bg-green-100 text-green-700" },
-              ].map((item, i, arr) => (
-                <div key={item.label} className="flex items-center gap-3">
-                  <div className={`px-4 py-2 rounded-xl font-medium ${item.color}`}>
-                    <p>{item.label}</p>
-                    <p className="text-xs font-normal opacity-75 mt-0.5">{item.sub}</p>
-                  </div>
-                  {i < arr.length - 1 && <span className="text-gray-300 text-lg hidden md:block">→</span>}
+                { stat: "10 min", label: "First email after a missed call" },
+                { stat: "4", label: "Follow-up scenarios covered" },
+                { stat: "3-step", label: "Sequence per lead, automated" },
+                { stat: "0", label: "Emails your team has to write" },
+              ].map(item => (
+                <div key={item.stat} className="rounded-2xl p-5 border border-white/15" style={{ backgroundColor: "rgba(255,255,255,0.1)" }}>
+                  <p className="text-4xl font-black text-white mb-1">{item.stat}</p>
+                  <p className="text-sm text-white/60 leading-snug">{item.label}</p>
                 </div>
               ))}
             </div>
@@ -133,100 +57,114 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Features */}
-      <section id="features" className="bg-white py-20">
-        <div className="max-w-6xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold mb-4">Everything your team needs</h2>
-          <p className="text-gray-500 text-lg">Not a generic CRM with email bolted on. Built specifically for dealership workflows.</p>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {[
-            {
-              icon: "✉️",
-              title: "AI-Written Emails",
-              desc: "Every first email is written by AI — personalized to the customer's name, vehicle interest, and how they contacted you. No templates, no generic copy.",
-            },
-            {
-              icon: "⏱️",
-              title: "Timed Sequences",
-              desc: "Sequences fire automatically based on scenario. Buying lead? 10 minutes. Service inquiry? Same day. Each scenario has optimized timing.",
-            },
-            {
-              icon: "📬",
-              title: "Reply Detection",
-              desc: "Connect your Gmail or Outlook. When a customer replies, the sequence stops instantly — no double-emailing, no awkward follow-ups after they've responded.",
-            },
-            {
-              icon: "📅",
-              title: "Appointment Tracking",
-              desc: "Calendly and Acuity webhooks auto-create appointments. First salesperson to claim it owns it — no double-booking, no missed handoffs.",
-            },
-            {
-              icon: "👥",
-              title: "Team Roles",
-              desc: "Owners see everything. Managers see their department. Salespeople see their leads. Clean separation, zero confusion.",
-            },
-            {
-              icon: "📊",
-              title: "Pipeline View",
-              desc: "See where every lead stands, how many emails went out, who responded, and each salesperson's conversion numbers — all in one place.",
-            },
-          ].map((f, i) => (
-            <AnimateIn key={f.title} delay={i * 80} direction="up">
-            <div className="border border-[#00406e]/30 rounded-2xl p-6 hover:shadow-sm transition h-full hover:border-[#00406e]/60">
-              <div className="w-2 h-2 rounded-full bg-[#00406e] mb-4"></div>
-              <h3 className="font-semibold text-[#00406e] mb-2">{f.title}</h3>
-              <p className="text-gray-500 text-sm leading-relaxed">{f.desc}</p>
+      {/* Problem */}
+      <section className="px-6 py-20" style={{ backgroundColor: "#f8faff" }}>
+        <div className="max-w-6xl mx-auto">
+          <AnimateIn>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <p className="text-sm font-bold uppercase tracking-widest mb-4" style={{ color: BRAND }}>The Problem</p>
+                <h2 className="text-5xl font-black leading-tight mb-6">Most leads never hear back.</h2>
+                <p className="text-gray-500 text-lg leading-relaxed">
+                  A customer calls about an S4 and your team misses it. By the time someone follows up two days later, they've already bought from the dealership down the street.
+                </p>
+              </div>
+              <div className="grid grid-cols-1 gap-4">
+                {[
+                  { pct: "80%", label: "of leads never get followed up on the same day" },
+                  { pct: "78%", label: "of customers buy from the first dealership to respond" },
+                  { pct: "5 min", label: "is the ideal window to respond to a new lead" },
+                ].map(item => (
+                  <div key={item.pct} className="flex items-center gap-5 rounded-2xl p-5 border border-[#0057a8]/15 bg-white">
+                    <span className="text-4xl font-black shrink-0" style={{ color: BRAND }}>{item.pct}</span>
+                    <span className="text-gray-600 text-sm leading-snug">{item.label}</span>
+                  </div>
+                ))}
+              </div>
             </div>
-            </AnimateIn>
-          ))}
-        </div>
+          </AnimateIn>
         </div>
       </section>
 
-      {/* Scenarios */}
-      <section id="scenarios" className="bg-[#e6f0f7] py-20">
-        <div className="max-w-4xl mx-auto px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Four scenarios, fully covered</h2>
-            <p className="text-gray-500">Every type of cold lead gets the right sequence automatically.</p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      {/* How it works */}
+      <section id="how-it-works" className="px-6 py-20" style={{ backgroundColor: BRAND_LIGHT }}>
+        <div className="max-w-6xl mx-auto">
+          <AnimateIn>
+            <div className="text-center mb-14">
+              <p className="text-sm font-bold uppercase tracking-widest mb-3" style={{ color: BRAND }}>How It Works</p>
+              <h2 className="text-5xl font-black mb-4">Set it up once.<br />It runs itself.</h2>
+              <p className="text-gray-500 text-lg max-w-xl mx-auto">Three steps. No manual work. Your leads get followed up whether your team is busy or not.</p>
+            </div>
+          </AnimateIn>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
             {[
-              {
-                name: "Missed Call / Web Form",
-                dept: "Sales",
-                timing: "Email #1: 10 min · Email #2: Day 3 · Closing: Day 7",
-                desc: "Lead called about a vehicle or submitted a form. Follows up fast before they move on.",
-              },
-              {
-                name: "Service Inquiry",
-                dept: "Service",
-                timing: "Email #1: Same day · Email #2: Day 3 · Closing: Day 7",
-                desc: "Customer reached out about service but wasn't scheduled. Gets them booked.",
-              },
-              {
-                name: "Trade-In Inquiry",
-                dept: "Finance",
-                timing: "Email #1: Same day · Email #2: Day 4 · Closing: Day 10",
-                desc: "Lead asked about trading in their car. Keeps them engaged with a valuation link.",
-              },
-              {
-                name: "Test Drive No-Show",
-                dept: "Sales",
-                timing: "Email #1: Same day · Email #2: Day 3 · Closing: Day 7",
-                desc: "Had a test drive scheduled but didn't show. Offers to reschedule before the lead goes cold.",
-              },
-            ].map((s, i) => (
-              <AnimateIn key={s.name} delay={i * 100} direction="up">
-                <div className="bg-white border border-[#00406e]/30 rounded-2xl p-6 h-full">
-                  <div className="flex items-start justify-between mb-3">
-                    <h3 className="font-semibold text-[#00406e]">{s.name}</h3>
-                    <span className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded-full">{s.dept}</span>
+              { n: "1", title: "Lead comes in", desc: "Missed call, web form, service inquiry, or trade-in. Add manually or connect your existing system." },
+              { n: "2", title: "AI writes the email", desc: "Not a template — a real email referencing their name, the specific car they asked about, and how they reached out." },
+              { n: "3", title: "Sequence runs itself", desc: "Follow-up 2 at day 3. Closing email at day 7. When they reply, it stops. No double-sending." },
+            ].map((item, i) => (
+              <AnimateIn key={item.n} delay={i * 120} direction="up">
+                <div className="bg-white rounded-2xl p-7 border h-full" style={{ borderColor: `${BRAND}30` }}>
+                  <div className="w-10 h-10 rounded-xl flex items-center justify-center font-black text-white mb-5" style={{ backgroundColor: BRAND }}>
+                    {item.n}
                   </div>
-                  <p className="text-gray-500 text-sm mb-3 leading-relaxed">{s.desc}</p>
-                  <p className="text-xs text-gray-400 font-mono">{s.timing}</p>
+                  <h3 className="text-xl font-bold mb-2">{item.title}</h3>
+                  <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
+                </div>
+              </AnimateIn>
+            ))}
+          </div>
+
+          {/* Sequence flow */}
+          <AnimateIn>
+            <div className="bg-white rounded-2xl p-7 border" style={{ borderColor: `${BRAND}20` }}>
+              <p className="text-sm font-bold uppercase tracking-widest mb-5 text-center" style={{ color: BRAND }}>Sequence Timeline</p>
+              <div className="flex items-stretch justify-between flex-wrap gap-3">
+                {[
+                  { label: "Lead created", sub: "Day 0", bg: BRAND, text: "white" },
+                  { label: "Email #1", sub: "10 min–Same day", bg: "#f0f4ff", text: BRAND },
+                  { label: "Email #2", sub: "Day 3", bg: "#f0f4ff", text: BRAND },
+                  { label: "Closing email", sub: "Day 7–10", bg: "#f0f4ff", text: BRAND },
+                  { label: "Sequence ends", sub: "Or reply stops it", bg: "#e8f5ee", text: "#166534" },
+                ].map((s, i, arr) => (
+                  <div key={s.label} className="flex items-center gap-3">
+                    <div className="px-4 py-3 rounded-xl text-center min-w-[110px]" style={{ backgroundColor: s.bg, color: s.text }}>
+                      <p className="font-bold text-sm">{s.label}</p>
+                      <p className="text-xs opacity-70 mt-0.5">{s.sub}</p>
+                    </div>
+                    {i < arr.length - 1 && <span className="text-gray-300 text-lg hidden md:block">→</span>}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </AnimateIn>
+        </div>
+      </section>
+
+      {/* Features */}
+      <section id="features" className="px-6 py-20 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <AnimateIn>
+            <div className="text-center mb-14">
+              <p className="text-sm font-bold uppercase tracking-widest mb-3" style={{ color: BRAND }}>Features</p>
+              <h2 className="text-5xl font-black mb-4">Everything your team needs.</h2>
+              <p className="text-gray-500 text-lg max-w-xl mx-auto">Not a generic CRM with email bolted on. Built specifically for how dealerships actually work.</p>
+            </div>
+          </AnimateIn>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            {[
+              { title: "AI-Written Emails", desc: "Every first email is written by AI — personalized to the customer's name, vehicle interest, and how they contacted you. No templates, no generic copy." },
+              { title: "Timed Sequences", desc: "Sequences fire automatically based on scenario. Buying lead? 10 minutes. Service inquiry? Same day. Each scenario has optimized timing built in." },
+              { title: "Reply Detection", desc: "Connect Gmail or Outlook. When a customer replies, the sequence stops instantly. No double-emailing. No awkward follow-ups after they've responded." },
+              { title: "Appointment Tracking", desc: "Calendly and Acuity webhooks auto-create appointments. First salesperson to claim it owns it — no double-booking, no missed handoffs." },
+              { title: "Team Roles", desc: "Owners see everything. Managers see their department. Salespeople see only their leads. Clean separation, zero confusion." },
+              { title: "Pipeline Analytics", desc: "See where every lead stands, how many emails went out, response rates, and each salesperson's performance — all in one place." },
+            ].map((f, i) => (
+              <AnimateIn key={f.title} delay={i * 70} direction="up">
+                <div className="rounded-2xl p-6 h-full border hover:shadow-md transition-all" style={{ borderColor: `${BRAND}25` }}>
+                  <div className="w-2 h-2 rounded-full mb-4" style={{ backgroundColor: BRAND }}></div>
+                  <h3 className="text-lg font-bold mb-2" style={{ color: BRAND }}>{f.title}</h3>
+                  <p className="text-gray-500 text-sm leading-relaxed">{f.desc}</p>
                 </div>
               </AnimateIn>
             ))}
@@ -234,12 +172,42 @@ export default function HomePage() {
         </div>
       </section>
 
-
+      {/* Scenarios */}
+      <section id="scenarios" className="px-6 py-20" style={{ backgroundColor: BRAND_LIGHT }}>
+        <div className="max-w-6xl mx-auto">
+          <AnimateIn>
+            <div className="text-center mb-14">
+              <p className="text-sm font-bold uppercase tracking-widest mb-3" style={{ color: BRAND }}>Scenarios</p>
+              <h2 className="text-5xl font-black mb-4">Four scenarios,<br />fully covered.</h2>
+              <p className="text-gray-500 text-lg max-w-xl mx-auto">Every type of cold lead gets the right sequence automatically. Nothing falls through the cracks.</p>
+            </div>
+          </AnimateIn>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+            {[
+              { name: "Missed Call / Web Form", dept: "Sales", timing: "Email #1: 10 min · Email #2: Day 3 · Closing: Day 7", desc: "Lead called about a vehicle or submitted a form. Follows up fast before they move on to another dealer." },
+              { name: "Service Inquiry", dept: "Service", timing: "Email #1: Same day · Email #2: Day 3 · Closing: Day 7", desc: "Customer reached out about service but wasn't scheduled. Gets them booked with a direct link." },
+              { name: "Trade-In Inquiry", dept: "Finance", timing: "Email #1: Same day · Email #2: Day 4 · Closing: Day 10", desc: "Lead asked about trading in their car. Keeps them engaged with a valuation link and no pressure." },
+              { name: "Test Drive No-Show", dept: "Sales", timing: "Email #1: Same day · Email #2: Day 3 · Closing: Day 7", desc: "Had a test drive scheduled but didn't show. Offers to reschedule before the lead goes completely cold." },
+            ].map((s, i) => (
+              <AnimateIn key={s.name} delay={i * 90} direction="up">
+                <div className="bg-white rounded-2xl p-7 h-full border" style={{ borderColor: `${BRAND}20` }}>
+                  <div className="flex items-start justify-between mb-4">
+                    <h3 className="text-xl font-bold" style={{ color: BRAND }}>{s.name}</h3>
+                    <span className="text-xs font-semibold px-3 py-1 rounded-full" style={{ backgroundColor: `${BRAND}15`, color: BRAND }}>{s.dept}</span>
+                  </div>
+                  <p className="text-gray-600 text-sm mb-4 leading-relaxed">{s.desc}</p>
+                  <p className="text-xs font-mono text-gray-400">{s.timing}</p>
+                </div>
+              </AnimateIn>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* Footer */}
       <footer className="border-t border-gray-100 py-10 px-6">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-400">
-          <span className="font-medium text-gray-600">Lugano Automation</span>
+          <span className="font-bold text-lg" style={{ color: BRAND }}>Lugano Automation</span>
           <div className="flex gap-6">
             <a href="/terms" className="hover:text-gray-600 transition">Terms</a>
             <a href="/privacy" className="hover:text-gray-600 transition">Privacy</a>
