@@ -3,7 +3,7 @@ export const metadata = {
 }
 
 export default function PrivacyPage() {
-  const updated = "June 6, 2026"
+  const updated = "July 2, 2026"
 
   return (
     <div className="min-h-screen bg-white">
@@ -42,8 +42,10 @@ export default function PrivacyPage() {
 
             <h3 className="font-medium text-gray-900 mb-2 mt-4">Information from third parties:</h3>
             <ul className="list-disc pl-6 space-y-2">
-              <li><strong>Gmail / Outlook:</strong> If you connect your inbox, we access email metadata to detect customer replies and stop follow-up sequences. We read only the minimum necessary data and do not store email body content beyond what you explicitly authorize</li>
+              <li><strong>Gmail / Outlook:</strong> If you connect your inbox, we access emails to read customer replies and continue or stop the AI conversation sequence. We read only messages from your connected leads and store the content of those replies to enable the AI to respond contextually</li>
               <li><strong>Scheduling tools:</strong> If you connect Calendly or Acuity, we receive appointment booking data</li>
+              <li><strong>SMS:</strong> If SMS is enabled, we use Twilio to send and receive text messages with your leads. Message content is stored to maintain conversation context</li>
+              <li><strong>AI conversation data:</strong> Customer email and SMS replies are processed by Anthropic&apos;s Claude AI to generate responses. Message content is transmitted to Anthropic&apos;s API for processing. Anthropic&apos;s privacy policy applies to that processing</li>
             </ul>
           </section>
 
