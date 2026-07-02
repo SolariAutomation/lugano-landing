@@ -158,12 +158,12 @@ export default function Page() {
         </div>
 
         <h1 style={{fontSize:"clamp(2.5rem,6vw,5.5rem)",fontWeight:800,letterSpacing:"-.03em",lineHeight:1.06,color:"var(--white)",maxWidth:960,opacity:0,animation:"fadeUp .9s .4s ease forwards"}}>
-          Your Dealership.{" "}
-          <em style={{fontStyle:"normal",color:"var(--blue-200)"}}>Working Around the Clock.</em>
+          Stop losing leads{" "}
+          <em style={{fontStyle:"normal",color:"var(--blue-200)"}}>to silence.</em>
         </h1>
 
         <p style={{fontSize:"clamp(1rem,2vw,1.25rem)",lineHeight:1.65,color:"rgba(255,255,255,0.65)",maxWidth:600,margin:"24px auto 0",opacity:0,animation:"fadeUp .9s .6s ease forwards"}}>
-          Lugano Automation puts your lead follow-up, appointment booking, and CRM on autopilot — so your sales team only talks to buyers who are ready to close.
+          Lugano handles the entire conversation — from missed call to booked appointment. The AI follows up, answers questions, handles objections, and gets them in the door. Your team steps in when they&apos;re ready to buy.
         </p>
 
         <div style={{display:"flex",gap:14,marginTop:44,flexWrap:"wrap",justifyContent:"center",opacity:0,animation:"fadeUp .9s .8s ease forwards"}}>
@@ -199,13 +199,13 @@ export default function Page() {
         <div className="two-col">
           <div>
             <span className="section-eyebrow reveal">The Problem</span>
-            <h2 className="section-title reveal reveal-delay-1">You&apos;re paying for leads that <em>no one follows up on</em></h2>
-            <p className="section-sub reveal reveal-delay-2">As a dealer principal, you already know the math: your advertising spend brings in hundreds of leads a month, but most of your team only chases the hot ones. The rest go cold. Lugano ensures every single lead gets a real, personal follow-up — no matter the time of day.</p>
+            <h2 className="section-title reveal reveal-delay-1">Most leads never <em>hear back.</em></h2>
+            <p className="section-sub reveal reveal-delay-2">Your team chases the hot ones and lets the rest go cold. By the time someone follows up two days later, that buyer already bought from the dealer down the street. Lugano makes sure every single lead gets a real, personal follow-up — no matter the time of day.</p>
             <ul style={{listStyle:"none",marginTop:28,display:"flex",flexDirection:"column",gap:12}}>
               {[
-                "Every inbound lead gets a personal, timely response — nights, weekends, holidays",
-                "Your sales team only spends time on buyers who are warmed up and ready",
-                "Your CRM stays clean and up to date — without your team lifting a finger",
+                "Every inbound lead gets a personal response — nights, weekends, holidays",
+                "AI handles the full conversation until they're ready to come in",
+                "Your team only steps in when a buyer is warmed up and ready to buy",
               ].map((text, i) => (
                 <li key={i} className={`reveal reveal-delay-${i + 3}`} style={{display:"flex",alignItems:"flex-start",gap:12,fontSize:".95rem",color:"var(--text-secondary)",lineHeight:1.55}}>
                   <span className="check-icon">
@@ -264,9 +264,9 @@ export default function Page() {
             </p>
             <ul style={{listStyle:"none",marginTop:24,display:"flex",flexDirection:"column",gap:12}}>
               {[
-                "Handles the full conversation until the buyer is ready to come in",
-                "Qualifies prospects so your team only talks to serious buyers",
-                "Works across every lead source: website, Facebook, AutoTrader, and more",
+                "Handles the full back-and-forth conversation — not just a one-time email blast",
+                "Detects buying intent and alerts your team the moment someone is ready to move",
+                "Works across every lead source: website, Facebook, AutoTrader, missed calls, and more",
               ].map((text, i) => (
                 <li key={i} className={`reveal reveal-delay-${i + 3}`} style={{display:"flex",alignItems:"flex-start",gap:12,fontSize:".95rem",color:"var(--text-secondary)",lineHeight:1.55}}>
                   <span className="check-icon">
