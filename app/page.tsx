@@ -506,10 +506,28 @@ function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     setLoading(true);
-    setTimeout(() => { setLoading(false); setSubmitted(true); }, 1200);
+    const form = e.target as HTMLFormElement;
+    const data = {
+      firstName: (form.querySelector('#fname') as HTMLInputElement)?.value,
+      lastName: (form.querySelector('#lname') as HTMLInputElement)?.value,
+      email: (form.querySelector('#email') as HTMLInputElement)?.value,
+      phone: (form.querySelector('#phone') as HTMLInputElement)?.value,
+      dealership: (form.querySelector('#dealership') as HTMLInputElement)?.value,
+      volume: (form.querySelector('#volume') as HTMLSelectElement)?.value,
+      message: (form.querySelector('#message') as HTMLTextAreaElement)?.value,
+    };
+    try {
+      await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+    } catch {}
+    setLoading(false);
+    setSubmitted(true);
   }
 
   const inputStyle: React.CSSProperties = {
