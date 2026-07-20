@@ -13,7 +13,7 @@ export async function POST(req: NextRequest) {
   try {
     await resend.emails.send({
       from: `Lugano Automation <${process.env.RESEND_FROM_EMAIL || 'noreply@mail.luganoautomation.com'}>`,
-      to: ['hello@luganoautomation.com'],
+      to: ['sales@luganoautomation.com'],
       replyTo: email,
       subject: `New inquiry: ${dealership} — ${firstName} ${lastName}`,
       text: `New contact form submission from luganoautomation.com

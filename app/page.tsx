@@ -467,7 +467,7 @@ export default function Page() {
             <div style={{marginTop:16,display:"flex",gap:12,flexWrap:"wrap"}}>
               <a href="tel:9253418041" style={{color:"var(--blue-200)",textDecoration:"none",fontSize:".875rem",fontWeight:600}}>(925) 341-8041</a>
               <span style={{color:"rgba(255,255,255,0.2)"}}>·</span>
-              <a href="mailto:hello@luganoautomation.com" style={{color:"rgba(255,255,255,0.5)",textDecoration:"none",fontSize:".875rem"}}>hello@luganoautomation.com</a>
+              <a href="mailto:sales@luganoautomation.com" style={{color:"rgba(255,255,255,0.5)",textDecoration:"none",fontSize:".875rem"}}>sales@luganoautomation.com</a>
             </div>
           </div>
           <div>
@@ -485,15 +485,16 @@ export default function Page() {
           <div>
             <h4 style={{fontSize:".8rem",fontWeight:700,letterSpacing:".08em",textTransform:"uppercase",color:"var(--white)",marginBottom:16}}>Get in Touch</h4>
             <ul style={{listStyle:"none",display:"flex",flexDirection:"column",gap:10}}>
-              {[["tel:9253418041","(925) 341-8041"],["https://wa.me/19253418041","WhatsApp"],["mailto:hello@luganoautomation.com","Email Us"],["#contact","Free Strategy Call"]].map(([href,label]) => <li key={label}><a href={href} style={{color:"rgba(255,255,255,0.5)",textDecoration:"none",fontSize:".875rem"}}>{label}</a></li>)}
+              {[["tel:9253418041","(925) 341-8041"],["https://wa.me/19253418041","WhatsApp"],["mailto:sales@luganoautomation.com","Sales"],["mailto:support@luganoautomation.com","Support"],["#contact","Free Strategy Call"]].map(([href,label]) => <li key={label}><a href={href} style={{color:"rgba(255,255,255,0.5)",textDecoration:"none",fontSize:".875rem"}}>{label}</a></li>)}
             </ul>
           </div>
         </div>
         <div style={{paddingTop:32,display:"flex",justifyContent:"space-between",alignItems:"center",flexWrap:"wrap",gap:12}}>
           <p style={{fontSize:".8rem"}}>© 2025 Lugano Automation. All rights reserved.</p>
           <div style={{display:"flex",gap:12}}>
-            <a href="#" style={{color:"rgba(255,255,255,0.4)",textDecoration:"none",fontSize:".8rem"}}>Privacy Policy</a>
-            <a href="#" style={{color:"rgba(255,255,255,0.4)",textDecoration:"none",fontSize:".8rem"}}>Terms of Service</a>
+            <a href="/privacy" style={{color:"rgba(255,255,255,0.4)",textDecoration:"none",fontSize:".8rem"}}>Privacy Policy</a>
+            <a href="/terms" style={{color:"rgba(255,255,255,0.4)",textDecoration:"none",fontSize:".8rem"}}>Terms of Service</a>
+            <a href="mailto:support@luganoautomation.com" style={{color:"rgba(255,255,255,0.4)",textDecoration:"none",fontSize:".8rem"}}>Support</a>
           </div>
           <span style={{background:"rgba(255,255,255,0.06)",border:"1px solid rgba(255,255,255,0.1)",color:"rgba(255,255,255,0.6)",fontSize:".75rem",fontWeight:600,padding:"5px 12px",borderRadius:100}}>Lugano Automation</span>
         </div>
