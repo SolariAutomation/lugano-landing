@@ -118,7 +118,7 @@ export default function AgreementPage() {
 
           <section>
             <h2 className="text-lg font-semibold text-gray-900 mb-3">12. Governing Law</h2>
-            <p>This Agreement is governed by the laws of the State of [YOUR STATE], without regard to conflict of law principles. Any disputes shall be resolved in the courts of [YOUR STATE], and both parties consent to personal jurisdiction there.</p>
+            <p>This Agreement is governed by the laws of the State of California, without regard to conflict of law principles. Any disputes shall be resolved in the courts of California, and both parties consent to personal jurisdiction there.</p>
           </section>
 
           <section>
