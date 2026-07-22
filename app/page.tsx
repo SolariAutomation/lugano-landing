@@ -418,7 +418,7 @@ export default function Page() {
         <h2 className="section-title centered reveal reveal-delay-1" style={{color:"var(--white)",maxWidth:740,position:"relative"}}>
           Ready to stop <em style={{fontStyle:"normal",color:"var(--blue-200)"}}>leaving money on the table?</em>
         </h2>
-        <p className="section-sub centered reveal reveal-delay-2" style={{color:"rgba(255,255,255,0.6)",position:"relative"}}>
+        <p className="section-sub centered reveal reveal-delay-2" style={{color:"rgba(255,255,255,0.6)",position:"relative",margin:"24px auto 0",textAlign:"center"}}>
           Reach out any way that works for you. We&apos;ll set up a free strategy call to walk through exactly what Lugano can do for your store.
         </p>
 
@@ -444,7 +444,7 @@ export default function Page() {
                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
                 <polyline points="22,6 12,13 2,6"/>
               </svg>
-              <div><div>Email Us</div><span style={{color:"var(--text-muted)",fontWeight:400,fontSize:".8rem"}}>sales@luganoautomation.com</span></div>
+              <div><div>Email Us</div><span style={{color:"var(--text-muted)",fontWeight:400,fontSize:".8rem"}}>Typically replies same day</span></div>
             </a>
           </div>
 
