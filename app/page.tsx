@@ -121,9 +121,8 @@ export default function Page() {
 
       {/* NAV */}
       <nav style={{position:"fixed",top:0,left:0,right:0,zIndex:100,height:"var(--nav-h)",display:"flex",alignItems:"center",justifyContent:"space-between",padding:"0 5%",background:scrolled?"rgba(255,255,255,0.88)":"transparent",backdropFilter:scrolled?"blur(20px)":"undefined",WebkitBackdropFilter:scrolled?"blur(20px)":"undefined",boxShadow:scrolled?"0 1px 0 rgba(4,13,26,0.08)":"none",transition:"background .4s,box-shadow .4s"}}>
-        <a href="#" style={{fontSize:"1.25rem",fontWeight:800,letterSpacing:"-.02em",color:scrolled?"var(--text-primary)":"var(--white)",textDecoration:"none",display:"flex",alignItems:"center",gap:10}}>
-          <div style={{width:34,height:34,borderRadius:8,background:scrolled?"var(--blue)":"var(--blue-400)",display:"grid",placeItems:"center",fontSize:".9rem",fontWeight:800,color:"#fff",flexShrink:0}}>LA</div>
-          Lugano Automation
+        <a href="/" style={{textDecoration:"none",display:"flex",alignItems:"center"}}>
+          <img src="/logo.svg" alt="Lugano Automation" style={{height:32,width:"auto",filter:scrolled?"invert(1) sepia(1) saturate(3) hue-rotate(190deg)":"none",transition:"filter .3s"}} />
         </a>
         <div className="nav-desktop" style={{alignItems:"center",gap:36}}>
           <a href="#services" onClick={(e) => smoothScroll(e, "#services")} style={navLinkStyle(scrolled)}>Services</a>
