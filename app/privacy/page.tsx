@@ -61,6 +61,7 @@ export default function PrivacyPage() {
               <li>Complying with legal obligations</li>
             </ul>
             <p className="mt-3">We do not sell your data or your customers&apos; data to third parties. We do not use your Customer Data to train AI models without your explicit consent.</p>
+            <p className="mt-3"><strong>Mobile phone numbers and SMS consent:</strong> Mobile phone numbers and SMS opt-in consent collected through dealership lead forms are never sold, shared, or transferred to third parties for marketing purposes. This data is used solely to facilitate follow-up communications between the dealership and the customer who submitted the form. Mobile opt-in data and consent will not be shared with any third party.</p>
           </section>
 
           <section>
