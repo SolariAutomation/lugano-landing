@@ -227,10 +227,10 @@ export default function Page() {
                 {n:3,t:"Appointment booked",s:"Synced to your calendar automatically",active:true,faded:false},
                 {n:4,t:"CRM updated — automatically",s:"Zero manual entry for your team",active:false,faded:true},
               ].map((step) => (
-                <div key={step.n} style={{background:step.active?"rgba(75,130,232,0.18)":"rgba(255,255,255,0.08)",border:step.active?"1px solid rgba(75,130,232,0.35)":"1px solid transparent",borderRadius:12,padding:"14px 18px",display:"flex",alignItems:"center",gap:14,opacity:step.faded?0.6:1}}>
+                <div key={step.n} style={{background:step.active?"rgba(75,130,232,0.22)":"rgba(255,255,255,0.1)",border:step.active?"1px solid rgba(75,130,232,0.35)":"1px solid transparent",borderRadius:12,padding:"14px 18px",display:"flex",alignItems:"center",gap:14,opacity:step.faded?0.6:1}}>
                   <div style={{width:32,height:32,borderRadius:"50%",background:step.active?"rgba(75,130,232,0.3)":"rgba(75,130,232,0.2)",display:"grid",placeItems:"center",flexShrink:0,fontSize:".8rem",fontWeight:800,color:"var(--blue-200)"}}>{step.n}</div>
                   <div>
-                    <div style={{color:step.active?"var(--blue-100)":"rgba(255,255,255,0.9)",fontSize:".875rem",fontWeight:600}}>{step.t}</div>
+                    <div style={{color:"rgba(255,255,255,0.95)",fontSize:".875rem",fontWeight:600}}>{step.t}</div>
                     <div style={{color:"rgba(255,255,255,0.4)",fontSize:".78rem",marginTop:2}}>{step.s}</div>
                   </div>
                 </div>
@@ -400,7 +400,7 @@ export default function Page() {
                 {label:"Post-visit follow-up",status:"Queued",active:false,faded:true,green:false},
               ].map((row, i) => (
                 <div key={i} style={{background:row.active?"rgba(75,130,232,0.2)":"rgba(255,255,255,0.08)",border:row.active?"1px solid rgba(75,130,232,0.4)":"1px solid transparent",borderRadius:12,padding:"14px 18px",display:"flex",justifyContent:"space-between",alignItems:"center",opacity:row.faded?0.6:1}}>
-                  <span style={{color:row.active?"var(--blue-100)":"rgba(255,255,255,0.8)",fontSize:".85rem",fontWeight:600}}>{row.label}</span>
+                  <span style={{color:"rgba(255,255,255,0.95)",fontSize:".85rem",fontWeight:600}}>{row.label}</span>
                   <span style={{background:row.green?"#22C55E":row.active?"var(--blue-400)":"rgba(255,255,255,0.1)",color:"#fff",fontSize:".7rem",fontWeight:700,padding:"3px 10px",borderRadius:100}}>{row.status}</span>
                 </div>
               ))}
