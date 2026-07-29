@@ -128,7 +128,7 @@ export default function Page() {
           <a href="#services" onClick={(e) => smoothScroll(e, "#services")} style={navLinkStyle(scrolled)}>Services</a>
           <a href="#how-it-works" onClick={(e) => smoothScroll(e, "#how-it-works")} style={navLinkStyle(scrolled)}>How It Works</a>
           <a href="/pricing" style={navLinkStyle(scrolled)}>Pricing</a>
-          <a href="#contact" onClick={(e) => smoothScroll(e, "#contact")} style={{background:scrolled?"var(--blue)":"var(--white)",color:scrolled?"var(--white)":"var(--blue)",padding:"10px 22px",borderRadius:100,fontWeight:700,fontSize:".875rem",textDecoration:"none",display:"inline-block"}}>Talk to Us</a>
+          <a href="#contact" onClick={(e) => smoothScroll(e, "#contact")} style={{background:scrolled?"var(--blue)":"var(--white)",color:scrolled?"var(--white)":"var(--blue)",padding:"10px 22px",borderRadius:100,fontWeight:700,fontSize:".875rem",textDecoration:"none",display:"inline-block"}}>Book a Demo</a>
         </div>
         <button onClick={() => setMenuOpen(!menuOpen)} className="nav-mobile" style={{flexDirection:"column",gap:4,cursor:"pointer",border:"none",background:"none",padding:6}} aria-label="Toggle menu">
           {[0,1,2].map(i => <span key={i} style={{display:"block",width:22,height:2,background:scrolled?"var(--text-primary)":"var(--white)",borderRadius:2}}/>)}
