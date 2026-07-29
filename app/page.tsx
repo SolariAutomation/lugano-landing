@@ -158,8 +158,8 @@ export default function Page() {
         </div>
 
         <h1 style={{fontSize:"clamp(2.5rem,6vw,5.5rem)",fontWeight:800,letterSpacing:"-.03em",lineHeight:1.06,color:"var(--white)",maxWidth:960,opacity:0,animation:"fadeUp .9s .4s ease forwards"}}>
-          Stop losing leads{" "}
-          <em style={{fontStyle:"normal",color:"var(--blue-200)"}}>to silence.</em>
+          Your dealership's{" "}
+          <em style={{fontStyle:"normal",color:"var(--blue-200)"}}>AI sales assistant.</em>
         </h1>
 
         <p style={{fontSize:"clamp(1rem,2vw,1.25rem)",lineHeight:1.65,color:"rgba(255,255,255,0.65)",maxWidth:600,margin:"24px auto 0",opacity:0,animation:"fadeUp .9s .6s ease forwards"}}>
@@ -199,13 +199,13 @@ export default function Page() {
         <div className="two-col">
           <div>
             <span className="section-eyebrow reveal">The Problem</span>
-            <h2 className="section-title reveal reveal-delay-1">Most leads never <em>hear back.</em></h2>
-            <p className="section-sub reveal reveal-delay-2">Your team chases the hot ones and lets the rest go cold. By the time someone follows up two days later, that buyer already bought from the dealer down the street. Lugano makes sure every single lead gets a real, personal follow-up — no matter the time of day.</p>
+            <h2 className="section-title reveal reveal-delay-1">Most leads <em>go cold</em> before anyone calls back.</h2>
+            <p className="section-sub reveal reveal-delay-2">Your sales team is busy with floor customers. Meanwhile, the leads from your website, missed calls, and AutoTrader just sit there. By the time someone follows up, that buyer is at the dealer down the street. Lugano deploys an AI that follows up every single one — instantly, personally, around the clock.</p>
             <ul style={{listStyle:"none",marginTop:28,display:"flex",flexDirection:"column",gap:12}}>
               {[
-                "Every inbound lead gets a personal response — nights, weekends, holidays",
-                "AI handles the full conversation until they're ready to come in",
-                "Your team only steps in when a buyer is warmed up and ready to buy",
+                "Every lead followed up in minutes — nights, weekends, and holidays",
+                "AI handles the full back-and-forth — your team only talks to buyers who are ready",
+                "Fully managed setup — we configure everything, you see results",
               ].map((text, i) => (
                 <li key={i} className={`reveal reveal-delay-${i + 3}`} style={{display:"flex",alignItems:"flex-start",gap:12,fontSize:".95rem",color:"var(--text-secondary)",lineHeight:1.55}}>
                   <span className="check-icon">
@@ -286,8 +286,8 @@ export default function Page() {
       <section id="services" style={{padding:"var(--section-gap) 5%",background:"var(--gray-50)"}}>
         <div className="centered">
           <span className="section-eyebrow reveal">What We Do</span>
-          <h2 className="section-title reveal reveal-delay-1">Three systems that <em>run your dealership</em> behind the scenes</h2>
-          <p className="section-sub reveal reveal-delay-2">We focus on the three areas where dealerships lose the most money: lead follow-up, appointment no-shows, and a messy CRM.</p>
+          <h2 className="section-title reveal reveal-delay-1">What we deploy <em>for your store</em></h2>
+          <p className="section-sub reveal reveal-delay-2">Three fully managed AI systems that work around the clock so your team can focus on selling.</p>
         </div>
         <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(300px,1fr))",gap:20,marginTop:60,maxWidth:1160,marginLeft:"auto",marginRight:"auto"}}>
           <div className="service-card reveal reveal-delay-1">
@@ -321,7 +321,7 @@ export default function Page() {
               </svg>
             </div>
             <h3 style={{fontSize:"1.2rem",fontWeight:700,letterSpacing:"-.01em",marginBottom:10}}>CRM Integration &amp; Automation</h3>
-            <p style={{fontSize:".95rem",lineHeight:1.7,color:"var(--text-secondary)"}}>Every call, text, and email is automatically logged. Lead stages update themselves. Tasks get assigned to the right salesperson at the right time. Works with VinSolutions, DealerSocket, CDK, and more.</p>
+            <p style={{fontSize:".95rem",lineHeight:1.7,color:"var(--text-secondary)"}}>Every conversation is automatically logged and synced. Lead stages update themselves. The right salesperson gets notified at exactly the right moment. Plugs into VinSolutions, DealerSocket, CDK, and more.</p>
             <span className="service-tag">Zero Manual Entry</span>
           </div>
         </div>
@@ -331,7 +331,7 @@ export default function Page() {
       <section id="how-it-works" style={{padding:"var(--section-gap) 5%",background:"var(--blue-900)"}}>
         <div className="centered">
           <span className="section-eyebrow reveal" style={{color:"var(--blue-200)"}}>The Process</span>
-          <h2 className="section-title reveal reveal-delay-1" style={{color:"var(--white)"}}>Live in your store in <em style={{fontStyle:"normal",color:"var(--blue-200)"}}>under 14 days</em></h2>
+          <h2 className="section-title reveal reveal-delay-1" style={{color:"var(--white)"}}>Up and running <em style={{fontStyle:"normal",color:"var(--blue-200)"}}>in under 2 weeks</em></h2>
           <p className="section-sub reveal reveal-delay-2" style={{color:"rgba(255,255,255,0.55)"}}>We handle every part of the setup. You don&apos;t need to be technical — you just need to show us your process.</p>
         </div>
         <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(220px,1fr))",gap:1,marginTop:64,maxWidth:1160,marginLeft:"auto",marginRight:"auto",background:"rgba(255,255,255,0.06)",borderRadius:24,overflow:"hidden"}}>
@@ -339,25 +339,25 @@ export default function Page() {
             <span style={{fontSize:".75rem",fontWeight:700,letterSpacing:".12em",textTransform:"uppercase",color:"var(--blue-200)",marginBottom:20,display:"block"}}>Step 01</span>
             <div className="step-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--blue-200)" strokeWidth="1.8"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div>
             <h3 style={{fontSize:"1.1rem",fontWeight:700,color:"var(--white)",marginBottom:10,letterSpacing:"-.01em"}}>Strategy Call</h3>
-            <p style={{fontSize:".9rem",lineHeight:1.65,color:"rgba(255,255,255,0.45)"}}>We learn how your store works, where leads come from, and where deals fall through. We map the gaps before building anything.</p>
+            <p style={{fontSize:".9rem",lineHeight:1.65,color:"rgba(255,255,255,0.45)"}}>We spend 30 minutes learning your store — how leads come in, how your team follows up, and where deals are falling through the cracks.</p>
           </div>
           <div className="hiw-step reveal reveal-delay-2">
             <span style={{fontSize:".75rem",fontWeight:700,letterSpacing:".12em",textTransform:"uppercase",color:"var(--blue-200)",marginBottom:20,display:"block"}}>Step 02</span>
             <div className="step-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--blue-200)" strokeWidth="1.8"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"/></svg></div>
             <h3 style={{fontSize:"1.1rem",fontWeight:700,color:"var(--white)",marginBottom:10,letterSpacing:"-.01em"}}>Custom Build</h3>
-            <p style={{fontSize:".9rem",lineHeight:1.65,color:"rgba(255,255,255,0.45)"}}>We build your follow-up sequences and booking flows around your inventory, offers, and the way your team talks to customers.</p>
+            <p style={{fontSize:".9rem",lineHeight:1.65,color:"rgba(255,255,255,0.45)"}}>We configure the AI around your brand — your tone, your vehicles, your follow-up timing. It sounds like your best salesperson, not a robot.</p>
           </div>
           <div className="hiw-step reveal reveal-delay-3">
             <span style={{fontSize:".75rem",fontWeight:700,letterSpacing:".12em",textTransform:"uppercase",color:"var(--blue-200)",marginBottom:20,display:"block"}}>Step 03</span>
             <div className="step-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--blue-200)" strokeWidth="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
             <h3 style={{fontSize:"1.1rem",fontWeight:700,color:"var(--white)",marginBottom:10,letterSpacing:"-.01em"}}>Integration &amp; Testing</h3>
-            <p style={{fontSize:".9rem",lineHeight:1.65,color:"rgba(255,255,255,0.45)"}}>We connect to your CRM, test every touchpoint end-to-end, and make sure everything runs exactly the way it should before going live.</p>
+            <p style={{fontSize:".9rem",lineHeight:1.65,color:"rgba(255,255,255,0.45)"}}>We connect to your CRM, Gmail, and website. We run test conversations end-to-end and don't go live until everything is exactly right.</p>
           </div>
           <div className="hiw-step reveal reveal-delay-4">
             <span style={{fontSize:".75rem",fontWeight:700,letterSpacing:".12em",textTransform:"uppercase",color:"var(--blue-200)",marginBottom:20,display:"block"}}>Step 04</span>
             <div className="step-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--blue-200)" strokeWidth="1.8"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
             <h3 style={{fontSize:"1.1rem",fontWeight:700,color:"var(--white)",marginBottom:10,letterSpacing:"-.01em"}}>Go Live &amp; Optimize</h3>
-            <p style={{fontSize:".9rem",lineHeight:1.65,color:"rgba(255,255,255,0.45)"}}>Flip the switch, start seeing results within days. We monitor performance and tune the system monthly so it keeps improving.</p>
+            <p style={{fontSize:".9rem",lineHeight:1.65,color:"rgba(255,255,255,0.45)"}}>The AI goes live. Within the first week you'll see leads getting followed up that would have gone cold. We monitor and tune the system every month.</p>
           </div>
         </div>
       </section>
