@@ -99,7 +99,7 @@ export default function Page() {
         .service-icon{width:52px;height:52px;border-radius:14px;background:var(--blue-50);display:grid;place-items:center;margin-bottom:22px;transition:background .3s}
         .service-card:hover .service-icon{background:var(--blue-100)}
         .service-tag{display:inline-block;margin-top:20px;font-size:.75rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--blue-400);background:var(--blue-50);padding:4px 12px;border-radius:100px}
-        .hiw-step{background:var(--blue-900);padding:44px 36px;transition:background .3s}
+        .hiw-step{background:var(--blue-800);padding:44px 36px;transition:background .3s}
         .hiw-step:hover{background:var(--blue-800)}
         .step-icon{width:48px;height:48px;border-radius:12px;background:rgba(75,130,232,.12);display:grid;place-items:center;margin-bottom:20px;transition:background .3s}
         .hiw-step:hover .step-icon{background:rgba(75,130,232,.2)}
@@ -285,8 +285,7 @@ export default function Page() {
       {/* SERVICES */}
       <section id="services" style={{padding:"var(--section-gap) 5%",background:"var(--gray-50)"}}>
         <div className="centered">
-          <span className="section-eyebrow reveal">What We Do</span>
-          <h2 className="section-title reveal reveal-delay-1">What we deploy <em>for your store</em></h2>
+          <h2 className="section-title reveal reveal-delay-1" style={{marginTop:0}}>What we deploy <em>for your store</em></h2>
           <p className="section-sub reveal reveal-delay-2">Three fully managed AI systems that work around the clock so your team can focus on selling.</p>
         </div>
         <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(300px,1fr))",gap:20,marginTop:60,maxWidth:1160,marginLeft:"auto",marginRight:"auto"}}>
@@ -321,7 +320,7 @@ export default function Page() {
               </svg>
             </div>
             <h3 style={{fontSize:"1.2rem",fontWeight:700,letterSpacing:"-.01em",marginBottom:10}}>CRM Integration &amp; Automation</h3>
-            <p style={{fontSize:".95rem",lineHeight:1.7,color:"var(--text-secondary)"}}>Every conversation is automatically logged and synced. Lead stages update themselves. The right salesperson gets notified at exactly the right moment. Plugs into VinSolutions, DealerSocket, CDK, and more.</p>
+            <p style={{fontSize:".95rem",lineHeight:1.7,color:"var(--text-secondary)"}}>Every conversation is automatically logged and synced. Lead stages update themselves. The right salesperson gets notified at exactly the right moment. Plugs into VinSolutions, DealerSocket, and more — without replacing your existing stack.</p>
             <span className="service-tag">Zero Manual Entry</span>
           </div>
         </div>
@@ -336,28 +335,28 @@ export default function Page() {
         </div>
         <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(220px,1fr))",gap:1,marginTop:64,maxWidth:1160,marginLeft:"auto",marginRight:"auto",background:"rgba(255,255,255,0.06)",borderRadius:24,overflow:"hidden"}}>
           <div className="hiw-step reveal reveal-delay-1">
-            <span style={{fontSize:".75rem",fontWeight:700,letterSpacing:".12em",textTransform:"uppercase",color:"var(--blue-200)",marginBottom:20,display:"block"}}>Step 01</span>
+            <span style={{fontSize:".75rem",fontWeight:700,letterSpacing:".12em",textTransform:"uppercase",color:"var(--blue-300)",marginBottom:20,display:"block"}}>Step 01</span>
             <div className="step-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--blue-200)" strokeWidth="1.8"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div>
-            <h3 style={{fontSize:"1.1rem",fontWeight:700,color:"var(--white)",marginBottom:10,letterSpacing:"-.01em"}}>Strategy Call</h3>
-            <p style={{fontSize:".9rem",lineHeight:1.65,color:"rgba(255,255,255,0.45)"}}>We spend 30 minutes learning your store — how leads come in, how your team follows up, and where deals are falling through the cracks.</p>
+            <h3 style={{fontSize:"1.1rem",fontWeight:700,color:"var(--white)",marginBottom:10,letterSpacing:"-.01em",opacity:1}}>Strategy Call</h3>
+            <p style={{fontSize:".9rem",lineHeight:1.65,color:"rgba(255,255,255,0.75)"}}>We spend 30 minutes learning your store — how leads come in, how your team follows up, and where deals are falling through the cracks.</p>
           </div>
           <div className="hiw-step reveal reveal-delay-2">
-            <span style={{fontSize:".75rem",fontWeight:700,letterSpacing:".12em",textTransform:"uppercase",color:"var(--blue-200)",marginBottom:20,display:"block"}}>Step 02</span>
+            <span style={{fontSize:".75rem",fontWeight:700,letterSpacing:".12em",textTransform:"uppercase",color:"var(--blue-300)",marginBottom:20,display:"block"}}>Step 02</span>
             <div className="step-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--blue-200)" strokeWidth="1.8"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"/></svg></div>
-            <h3 style={{fontSize:"1.1rem",fontWeight:700,color:"var(--white)",marginBottom:10,letterSpacing:"-.01em"}}>Custom Build</h3>
-            <p style={{fontSize:".9rem",lineHeight:1.65,color:"rgba(255,255,255,0.45)"}}>We configure the AI around your brand — your tone, your vehicles, your follow-up timing. It sounds like your best salesperson, not a robot.</p>
+            <h3 style={{fontSize:"1.1rem",fontWeight:700,color:"var(--white)",marginBottom:10,letterSpacing:"-.01em",opacity:1}}>Custom Build</h3>
+            <p style={{fontSize:".9rem",lineHeight:1.65,color:"rgba(255,255,255,0.75)"}}>We configure the AI around your brand — your tone, your vehicles, your follow-up timing. It sounds like your best salesperson, not a robot.</p>
           </div>
           <div className="hiw-step reveal reveal-delay-3">
-            <span style={{fontSize:".75rem",fontWeight:700,letterSpacing:".12em",textTransform:"uppercase",color:"var(--blue-200)",marginBottom:20,display:"block"}}>Step 03</span>
+            <span style={{fontSize:".75rem",fontWeight:700,letterSpacing:".12em",textTransform:"uppercase",color:"var(--blue-300)",marginBottom:20,display:"block"}}>Step 03</span>
             <div className="step-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--blue-200)" strokeWidth="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-            <h3 style={{fontSize:"1.1rem",fontWeight:700,color:"var(--white)",marginBottom:10,letterSpacing:"-.01em"}}>Integration &amp; Testing</h3>
-            <p style={{fontSize:".9rem",lineHeight:1.65,color:"rgba(255,255,255,0.45)"}}>We connect to your CRM, Gmail, and website. We run test conversations end-to-end and don't go live until everything is exactly right.</p>
+            <h3 style={{fontSize:"1.1rem",fontWeight:700,color:"var(--white)",marginBottom:10,letterSpacing:"-.01em",opacity:1}}>Integration &amp; Testing</h3>
+            <p style={{fontSize:".9rem",lineHeight:1.65,color:"rgba(255,255,255,0.75)"}}>We connect to your CRM, Gmail, and website. We run test conversations end-to-end and don't go live until everything is exactly right.</p>
           </div>
           <div className="hiw-step reveal reveal-delay-4">
-            <span style={{fontSize:".75rem",fontWeight:700,letterSpacing:".12em",textTransform:"uppercase",color:"var(--blue-200)",marginBottom:20,display:"block"}}>Step 04</span>
+            <span style={{fontSize:".75rem",fontWeight:700,letterSpacing:".12em",textTransform:"uppercase",color:"var(--blue-300)",marginBottom:20,display:"block"}}>Step 04</span>
             <div className="step-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--blue-200)" strokeWidth="1.8"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
-            <h3 style={{fontSize:"1.1rem",fontWeight:700,color:"var(--white)",marginBottom:10,letterSpacing:"-.01em"}}>Go Live &amp; Optimize</h3>
-            <p style={{fontSize:".9rem",lineHeight:1.65,color:"rgba(255,255,255,0.45)"}}>The AI goes live. Within the first week you'll see leads getting followed up that would have gone cold. We monitor and tune the system every month.</p>
+            <h3 style={{fontSize:"1.1rem",fontWeight:700,color:"var(--white)",marginBottom:10,letterSpacing:"-.01em",opacity:1}}>Go Live &amp; Optimize</h3>
+            <p style={{fontSize:".9rem",lineHeight:1.65,color:"rgba(255,255,255,0.75)"}}>The AI goes live. Within the first week you'll see leads getting followed up that would have gone cold. We monitor and tune the system every month.</p>
           </div>
         </div>
       </section>
