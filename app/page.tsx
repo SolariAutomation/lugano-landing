@@ -163,7 +163,7 @@ export default function Page() {
         </h1>
 
         <p style={{fontSize:"clamp(1rem,2vw,1.25rem)",lineHeight:1.65,color:"rgba(255,255,255,0.65)",maxWidth:600,margin:"24px auto 0",opacity:0,animation:"fadeUp .9s .6s ease forwards"}}>
-          Lugano handles the entire conversation — from missed call to booked appointment. The AI follows up, answers questions, handles objections, and gets them in the door. Your team steps in when they&apos;re ready to buy.
+          Lugano handles the entire conversation from missed call to booked appointment. The AI follows up, answers questions, handles objections, and gets them in the door. Your team steps in when they&apos;re ready to buy.
         </p>
 
         <div style={{display:"flex",gap:14,marginTop:44,flexWrap:"wrap",justifyContent:"center",opacity:0,animation:"fadeUp .9s .8s ease forwards"}}>
@@ -200,12 +200,12 @@ export default function Page() {
           <div>
             <span className="section-eyebrow reveal">The Problem</span>
             <h2 className="section-title reveal reveal-delay-1">Most leads <em>go cold</em> before anyone calls back.</h2>
-            <p className="section-sub reveal reveal-delay-2">Your sales team is busy with floor customers. Meanwhile, the leads from your website, missed calls, and AutoTrader just sit there. By the time someone follows up, that buyer is at the dealer down the street. Lugano deploys an AI that follows up every single one — instantly, personally, around the clock.</p>
+            <p className="section-sub reveal reveal-delay-2">Your sales team is busy with floor customers. Meanwhile, the leads from your website, missed calls, and AutoTrader just sit there. By the time someone follows up, that buyer is at the dealer down the street. Lugano deploys an AI that follows up every single one: instantly, personally, and around the clock.</p>
             <ul style={{listStyle:"none",marginTop:28,display:"flex",flexDirection:"column",gap:12}}>
               {[
-                "Every lead followed up in minutes — nights, weekends, and holidays",
-                "AI handles the full back-and-forth — your team only talks to buyers who are ready",
-                "Fully managed setup — we configure everything, you see results",
+                "Every lead followed up in minutes, nights, weekends, and holidays",
+                "AI handles the full back-and-forth your team only talks to buyers who are ready",
+                "Fully managed setup We configure everything, you see results",
               ].map((text, i) => (
                 <li key={i} className={`reveal reveal-delay-${i + 3}`} style={{display:"flex",alignItems:"flex-start",gap:12,fontSize:".95rem",color:"var(--text-secondary)",lineHeight:1.55}}>
                   <span className="check-icon">
@@ -225,7 +225,7 @@ export default function Page() {
                 {n:1,t:"Lead comes in",s:"Website, Facebook, AutoTrader, phone",active:false,faded:false},
                 {n:2,t:"Personal follow-up sent",s:"SMS + email, day or night",active:false,faded:false},
                 {n:3,t:"Appointment booked",s:"Synced to your calendar automatically",active:true,faded:false},
-                {n:4,t:"CRM updated — automatically",s:"Zero manual entry for your team",active:false,faded:true},
+                {n:4,t:"CRM updated automatically",s:"Zero manual entry for your team",active:false,faded:true},
               ].map((step) => (
                 <div key={step.n} style={{background:step.active?"rgba(75,130,232,0.22)":"rgba(255,255,255,0.1)",border:step.active?"1px solid rgba(75,130,232,0.35)":"1px solid transparent",borderRadius:12,padding:"14px 18px",display:"flex",alignItems:"center",gap:14,opacity:step.faded?0.6:1}}>
                   <div style={{width:32,height:32,borderRadius:"50%",background:step.active?"rgba(75,130,232,0.3)":"rgba(75,130,232,0.2)",display:"grid",placeItems:"center",flexShrink:0,fontSize:".8rem",fontWeight:800,color:"var(--blue-200)"}}>{step.n}</div>
@@ -260,11 +260,11 @@ export default function Page() {
               <em style={{fontStyle:"normal",color:"var(--blue-400)"}}>buys from your competitor</em>
             </h2>
             <p style={{fontSize:"1rem",lineHeight:1.75,color:"var(--text-secondary)",marginTop:18}} className="reveal reveal-delay-2">
-              Most dealerships only follow up with the hottest leads — and let the rest go cold. Lugano makes sure every single buyer gets a personal, timely response, whether it&apos;s 2pm or 2am.
+              Most dealerships only follow up with the hottest leads and let the rest go cold. Lugano makes sure every single buyer gets a personal, timely response, whether it&apos;s 2pm or 2am.
             </p>
             <ul style={{listStyle:"none",marginTop:24,display:"flex",flexDirection:"column",gap:12}}>
               {[
-                "Handles the full back-and-forth conversation — not just a one-time email blast",
+                "Handles the full back-and-forth conversation not just a one-time email blast",
                 "Detects buying intent and alerts your team the moment someone is ready to move",
                 "Works across every lead source: website, Facebook, AutoTrader, missed calls, and more",
               ].map((text, i) => (
@@ -320,7 +320,7 @@ export default function Page() {
               </svg>
             </div>
             <h3 style={{fontSize:"1.2rem",fontWeight:700,letterSpacing:"-.01em",marginBottom:10}}>CRM Integration &amp; Automation</h3>
-            <p style={{fontSize:".95rem",lineHeight:1.7,color:"var(--text-secondary)"}}>Every conversation is automatically logged and synced. Lead stages update themselves. The right salesperson gets notified at exactly the right moment. Plugs into VinSolutions, DealerSocket, and more — without replacing your existing stack.</p>
+            <p style={{fontSize:".95rem",lineHeight:1.7,color:"var(--text-secondary)"}}>Every conversation is automatically logged and synced. Lead stages update themselves. The right salesperson gets notified at exactly the right moment. Plugs into VinSolutions, DealerSocket, and more without replacing your existing stack.</p>
             <span className="service-tag">Zero Manual Entry</span>
           </div>
         </div>
@@ -331,7 +331,7 @@ export default function Page() {
         <div className="centered">
           <span className="section-eyebrow reveal" style={{color:"var(--blue-200)"}}>The Process</span>
           <h2 className="section-title reveal reveal-delay-1" style={{color:"var(--white)"}}>Up and running <em style={{fontStyle:"normal",color:"var(--blue-200)"}}>in under 2 weeks</em></h2>
-          <p className="section-sub reveal reveal-delay-2" style={{color:"rgba(255,255,255,0.55)"}}>We handle every part of the setup. You don&apos;t need to be technical — you just need to show us your process.</p>
+          <p className="section-sub reveal reveal-delay-2" style={{color:"rgba(255,255,255,0.55)"}}>We handle every part of the setup. You don&apos;t need to be technical You just need to show us your process.</p>
         </div>
         <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(220px,1fr))",gap:1,marginTop:64,maxWidth:1160,marginLeft:"auto",marginRight:"auto",background:"rgba(255,255,255,0.06)",borderRadius:24,overflow:"hidden"}}>
           <div className="hiw-step reveal reveal-delay-1">
@@ -376,8 +376,8 @@ export default function Page() {
             <ul style={{listStyle:"none",marginTop:24,display:"flex",flexDirection:"column",gap:12}}>
               {[
                 "Automated confirmation and reminder sequences via text and email",
-                "Buyers can reschedule in one tap — rather than just ghosting you",
-                "Syncs directly with your team's calendar — zero double-booking",
+                "Buyers can reschedule in one tap rather than just ghosting you",
+                "Syncs directly with your team's calendar with zero double-booking",
               ].map((text, i) => (
                 <li key={i} className={`reveal reveal-delay-${i + 3}`} style={{display:"flex",alignItems:"flex-start",gap:12,fontSize:".95rem",color:"var(--text-secondary)",lineHeight:1.55}}>
                   <span className="check-icon">
@@ -394,9 +394,9 @@ export default function Page() {
             <div style={{fontSize:".75rem",fontWeight:700,letterSpacing:".1em",textTransform:"uppercase",color:"var(--blue-200)",marginBottom:16,position:"relative"}}>Appointment Sequence</div>
             <div style={{display:"flex",flexDirection:"column",gap:14,position:"relative"}}>
               {[
-                {label:"Booking confirmed — SMS",status:"Sent",active:false,faded:false,green:true},
-                {label:"Day before reminder — SMS",status:"Sent",active:false,faded:false,green:true},
-                {label:"Morning of — final reminder",status:"Active",active:true,faded:false,green:false},
+                {label:"Booking confirmed via SMS",status:"Sent",active:false,faded:false,green:true},
+                {label:"Day before reminder via SMS",status:"Sent",active:false,faded:false,green:true},
+                {label:"Morning of: final reminder",status:"Active",active:true,faded:false,green:false},
                 {label:"Post-visit follow-up",status:"Queued",active:false,faded:true,green:false},
               ].map((row, i) => (
                 <div key={i} style={{background:row.active?"rgba(75,130,232,0.2)":"rgba(255,255,255,0.08)",border:row.active?"1px solid rgba(75,130,232,0.4)":"1px solid transparent",borderRadius:12,padding:"14px 18px",display:"flex",justifyContent:"space-between",alignItems:"center",opacity:row.faded?0.6:1}}>
@@ -461,7 +461,7 @@ export default function Page() {
         <div className="footer-top" style={{display:"grid",gridTemplateColumns:"2fr 1fr 1fr 1fr",gap:48,paddingBottom:48,borderBottom:"1px solid rgba(255,255,255,0.06)"}}>
           <div className="footer-brand">
             <div style={{fontSize:"1.2rem",fontWeight:800,color:"var(--white)",letterSpacing:"-.02em"}}>Lugano Automation</div>
-            <p style={{fontSize:".875rem",lineHeight:1.65,marginTop:10}}>AI automation built specifically for US car dealerships. We handle lead follow-up, appointment booking, and CRM sync — so your team can focus on selling.</p>
+            <p style={{fontSize:".875rem",lineHeight:1.65,marginTop:10}}>AI automation built specifically for US car dealerships. We handle lead follow-up, appointment booking, and CRM sync so your team can focus on selling.</p>
             <div style={{marginTop:16,display:"flex",gap:12,flexWrap:"wrap"}}>
               <a href="tel:9253418041" style={{color:"var(--blue-200)",textDecoration:"none",fontSize:".875rem",fontWeight:600}}>(925) 341-8041</a>
               <span style={{color:"rgba(255,255,255,0.2)"}}>·</span>
@@ -563,7 +563,7 @@ function ContactForm() {
         </div>
       </div>
       <button type="submit" disabled={loading || submitted} style={{width:"100%",marginTop:24,background:submitted?"#22C55E":"var(--blue)",color:"var(--white)",padding:"16px 32px",borderRadius:12,fontFamily:"inherit",fontSize:"1rem",fontWeight:700,border:"none",cursor:submitted?"default":"pointer",transition:"background .2s"}}>
-        {submitted ? "✓ Message received — we'll be in touch shortly!" : loading ? "Sending..." : "Send Message →"}
+        {submitted ? "✓ Message received. We'll be in touch shortly." : loading ? "Sending..." : "Send Message →"}
       </button>
       <p style={{fontSize:".8rem",color:"var(--text-muted)",marginTop:14,textAlign:"center"}}>No spam. No pressure. Just a straight conversation about your store.</p>
     </form>
