@@ -413,7 +413,7 @@ export default function Page() {
       <section id="contact" style={{padding:"var(--section-gap) 5%",background:"linear-gradient(135deg,var(--blue-900) 0%,var(--blue-700) 60%,var(--blue-600) 100%)",textAlign:"center",position:"relative",overflow:"hidden"}}>
         <div style={{position:"absolute",inset:0,background:"radial-gradient(circle at 50% 50%,rgba(36,96,208,0.3) 0%,transparent 65%)"}}/>
         <span className="section-eyebrow reveal" style={{position:"relative",color:"var(--blue-200)"}}>Let&apos;s Talk</span>
-        <h2 className="section-title centered reveal reveal-delay-1" style={{color:"var(--white)",maxWidth:740,position:"relative"}}>
+        <h2 className="section-title centered reveal reveal-delay-1" style={{color:"var(--white)",maxWidth:740,position:"relative",margin:"0 auto",textAlign:"center"}}>
           Ready to stop <em style={{fontStyle:"normal",color:"var(--blue-200)"}}>leaving money on the table?</em>
         </h2>
         <p className="section-sub centered reveal reveal-delay-2" style={{color:"rgba(255,255,255,0.6)",position:"relative",margin:"24px auto 0",textAlign:"center"}}>
