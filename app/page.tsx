@@ -315,7 +315,6 @@ export default function Page() {
                   Hi Marcus, we saw your inquiry about the 2026 BMW M4 Competition. Are you still looking, and did you have a color preference in mind?
                 </div>
               </div>
-              <div style={{fontSize:".72rem",color:"var(--text-muted)",textAlign:"right",marginTop:-6}}>Lugano AI · 10 min after inquiry</div>
 
               {/* Inbound — customer reply */}
               <div style={{display:"flex",justifyContent:"flex-start"}}>
@@ -323,7 +322,6 @@ export default function Page() {
                   Yeah still interested. Carbon Black if you have it. I'd also need to trade in my current car.
                 </div>
               </div>
-              <div style={{fontSize:".72rem",color:"var(--text-muted)",textAlign:"left",marginTop:-6}}>Marcus · Customer</div>
 
               {/* Outbound — trade-in response */}
               <div style={{display:"flex",justifyContent:"flex-end"}}>
@@ -345,7 +343,6 @@ export default function Page() {
                   Based on current market, a 2021 Mustang GT with 28k miles typically comes in around <strong style={{color:"#C5D8FF"}}>$31,500 to $33,000</strong> as a dealer trade. Final number depends on a quick appraisal. Want to come in this week and we can firm it up?
                 </div>
               </div>
-              <div style={{fontSize:".72rem",color:"var(--text-muted)",textAlign:"right",marginTop:-6}}>Lugano AI · 4 seconds after Marcus replied</div>
 
             </div>
 
