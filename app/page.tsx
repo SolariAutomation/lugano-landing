@@ -282,6 +282,81 @@ export default function Page() {
         </div>
       </section>
 
+
+      {/* AI Demo — Chat Bubbles */}
+      <section style={{padding:"80px 5%",background:"var(--white)"}}>
+        <div style={{maxWidth:1160,margin:"0 auto"}}>
+          <div className="centered" style={{marginBottom:56}}>
+            <span className="section-eyebrow reveal">See It In Action</span>
+            <h2 className="section-title reveal reveal-delay-1">
+              This is what your leads <em>actually experience</em>
+            </h2>
+            <p className="section-sub reveal reveal-delay-2">A real conversation from first contact to trade-in estimate. No templates. No scripts. Just the AI working.</p>
+          </div>
+
+          <div className="reveal-scale" style={{background:"var(--gray-50)",border:"1px solid var(--gray-100)",borderRadius:24,overflow:"hidden",maxWidth:480,margin:"0 auto",boxShadow:"0 20px 60px rgba(4,13,26,0.08)"}}>
+            {/* Phone header */}
+            <div style={{background:"var(--blue-900)",padding:"16px 20px",display:"flex",alignItems:"center",gap:12}}>
+              <div style={{width:36,height:36,borderRadius:"50%",background:"rgba(255,255,255,0.1)",display:"grid",placeItems:"center"}}>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.7)" strokeWidth="1.8"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              </div>
+              <div>
+                <div style={{color:"#fff",fontSize:".875rem",fontWeight:600}}>Prestige Auto Group</div>
+                <div style={{color:"rgba(255,255,255,0.45)",fontSize:".72rem"}}>AI Sales Assistant</div>
+              </div>
+            </div>
+
+            {/* Messages */}
+            <div style={{padding:"20px 16px",display:"flex",flexDirection:"column",gap:12,background:"var(--white)"}}>
+
+              {/* Outbound — first contact */}
+              <div style={{display:"flex",justifyContent:"flex-end"}}>
+                <div style={{background:"#1246A8",color:"#fff",borderRadius:"18px 18px 4px 18px",padding:"10px 14px",maxWidth:"80%",fontSize:".875rem",lineHeight:1.5}}>
+                  Hi Marcus, we saw your inquiry about the 2026 BMW M4 Competition. Are you still looking, and did you have a color preference in mind?
+                </div>
+              </div>
+              <div style={{fontSize:".72rem",color:"var(--text-muted)",textAlign:"right",marginTop:-6}}>Lugano AI · 10 min after inquiry</div>
+
+              {/* Inbound — customer reply */}
+              <div style={{display:"flex",justifyContent:"flex-start"}}>
+                <div style={{background:"var(--gray-50)",border:"1px solid var(--gray-100)",color:"var(--text-primary)",borderRadius:"18px 18px 18px 4px",padding:"10px 14px",maxWidth:"80%",fontSize:".875rem",lineHeight:1.5}}>
+                  Yeah still interested. Carbon Black if you have it. I'd also need to trade in my current car.
+                </div>
+              </div>
+              <div style={{fontSize:".72rem",color:"var(--text-muted)",textAlign:"left",marginTop:-6}}>Marcus · Customer</div>
+
+              {/* Outbound — trade-in response */}
+              <div style={{display:"flex",justifyContent:"flex-end"}}>
+                <div style={{background:"#1246A8",color:"#fff",borderRadius:"18px 18px 4px 18px",padding:"10px 14px",maxWidth:"85%",fontSize:".875rem",lineHeight:1.5}}>
+                  Carbon Black is a great choice on the M4. What are you trading in? If you can share the year, make, model, and mileage I can get you a ballpark number.
+                </div>
+              </div>
+
+              {/* Inbound — trade-in details */}
+              <div style={{display:"flex",justifyContent:"flex-start"}}>
+                <div style={{background:"var(--gray-50)",border:"1px solid var(--gray-100)",color:"var(--text-primary)",borderRadius:"18px 18px 18px 4px",padding:"10px 14px",maxWidth:"80%",fontSize:".875rem",lineHeight:1.5}}>
+                  2021 Mustang GT. Around 28,000 miles. Good condition.
+                </div>
+              </div>
+
+              {/* Outbound — trade-in estimate */}
+              <div style={{display:"flex",justifyContent:"flex-end"}}>
+                <div style={{background:"#1246A8",color:"#fff",borderRadius:"18px 18px 4px 18px",padding:"10px 14px",maxWidth:"85%",fontSize:".875rem",lineHeight:1.5}}>
+                  Based on current market, a 2021 Mustang GT with 28k miles typically comes in around <strong style={{color:"#C5D8FF"}}>$31,500 to $33,000</strong> as a dealer trade. Final number depends on a quick appraisal. Want to come in this week and we can firm it up?
+                </div>
+              </div>
+              <div style={{fontSize:".72rem",color:"var(--text-muted)",textAlign:"right",marginTop:-6}}>Lugano AI · 4 seconds after Marcus replied</div>
+
+            </div>
+
+            {/* Footer note */}
+            <div style={{background:"var(--gray-50)",borderTop:"1px solid var(--gray-100)",padding:"12px 20px",fontSize:".78rem",color:"var(--text-muted)",textAlign:"center"}}>
+              Fully automated. No salesperson involved yet.
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* SERVICES */}
       <section id="services" style={{padding:"var(--section-gap) 5%",background:"var(--gray-50)"}}>
         <div className="centered">
