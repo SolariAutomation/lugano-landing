@@ -89,7 +89,7 @@ export default function PricingPage() {
               padding: "16px", borderRadius: 100, fontWeight: 700, fontSize: "1rem",
               textDecoration: "none", marginBottom: 24,
             }}>Book a Strategy Call</a>
-            <p style={{ fontSize: ".8rem", color: "var(--text-muted)", textAlign: "center" }}>No commitment until you're ready. Cancel anytime.</p>
+            <p style={{ fontSize: ".8rem", color: "var(--text-muted)", textAlign: "center" }}>No setup fee. No long-term contract. Cancel anytime.</p>
           </div>
 
           {/* What's included */}
@@ -144,7 +144,7 @@ export default function PricingPage() {
         <div style={{ maxWidth: 680, margin: "0 auto" }}>
           <h2 style={{ fontSize: "clamp(1.5rem,3vw,2rem)", fontWeight: 800, letterSpacing: "-.02em", marginBottom: 48, textAlign: "center" }}>Common questions</h2>
           {[
-            ["What does the setup fee cover?", "It covers our time to configure the AI around your business — connecting your phone and email, setting up your follow-up sequences and tone, and making sure everything is tested before we go live. Typically 3–5 hours of hands-on setup."],
+            ["Is there a setup fee?", "No — setup is included in your first month. We configure everything, connect your systems, and run test conversations before going live. No extra charge."],
             ["How long does setup take?", "Most businesses are live within 5–10 business days from signing. We move fast."],
             ["Do I need to change my existing phone system or scheduling software?", "No. We connect to your existing email and phone system. No installs, no IT department required."],
             ["Can I cancel anytime?", "Yes — month-to-month. No long-term contracts. If you need to pause or cancel, just email us."],
