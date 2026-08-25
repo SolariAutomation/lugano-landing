@@ -326,14 +326,14 @@ export default function Page() {
               {/* Outbound — follow-up */}
               <div style={{display:"flex",justifyContent:"flex-end"}}>
                 <div style={{background:"#1246A8",color:"#fff",borderRadius:"18px 18px 4px 18px",padding:"10px 14px",maxWidth:"85%",fontSize:".875rem",lineHeight:1.5}}>
-                  That sounds urgent — would you like us to get someone out to you as soon as possible?
+                  We have an opening tomorrow between 1pm and 4pm. Does that work for you?
                 </div>
               </div>
 
               {/* Inbound — customer reply */}
               <div style={{display:"flex",justifyContent:"flex-start"}}>
                 <div style={{background:"var(--gray-50)",border:"1px solid var(--gray-100)",color:"var(--text-primary)",borderRadius:"18px 18px 18px 4px",padding:"10px 14px",maxWidth:"80%",fontSize:".875rem",lineHeight:1.5}}>
-                  Yes please, today if you can
+                  Yes, that works. What do I need to do?
                 </div>
               </div>
 

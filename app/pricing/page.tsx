@@ -57,7 +57,7 @@ export default function PricingPage() {
           <span style={{ color: "var(--blue-200)" }}>No setup headaches.</span>
         </h1>
         <p style={{ fontSize: "1.1rem", color: "rgba(255,255,255,0.6)", maxWidth: 520, margin: "0 auto" }}>
-          We handle everything — configuration, onboarding, and ongoing optimization. You just see more booked appointments.
+          One monthly fee. We handle everything — setup, configuration, and ongoing optimization. You just see more booked jobs.
         </p>
       </section>
 
@@ -68,9 +68,9 @@ export default function PricingPage() {
           {/* Main card */}
           <div style={{ background: "var(--white)", border: "2px solid var(--blue)", borderRadius: 24, padding: "48px 40px", boxShadow: "0 20px 60px rgba(18,70,168,0.12)" }}>
             <div style={{ display: "inline-block", background: "var(--blue-50)", color: "var(--blue-400)", fontSize: ".75rem", fontWeight: 700, letterSpacing: ".08em", padding: "4px 12px", borderRadius: 100, marginBottom: 24 }}>STANDARD PACKAGE</div>
-            <h2 style={{ fontSize: "1.5rem", fontWeight: 800, color: "var(--text-primary)", marginBottom: 8 }}>Fully Managed AI Sales Assistant</h2>
+            <h2 style={{ fontSize: "1.5rem", fontWeight: 800, color: "var(--text-primary)", marginBottom: 8 }}>Fully Managed AI Service Assistant</h2>
             <p style={{ color: "var(--text-secondary)", fontSize: ".95rem", lineHeight: 1.6, marginBottom: 32 }}>
-              We deploy, configure, and manage your AI follow-up system. Your team just closes deals.
+              We deploy, configure, and manage your AI follow-up system. Your team just does the work.
             </p>
 
             <div style={{ marginBottom: 32 }}>
@@ -99,11 +99,11 @@ export default function PricingPage() {
               {[
                 ["AI-Written Follow-Up Emails", "Every lead gets a personalized email within minutes — written by AI, not a template."],
                 ["Full Conversation Handling", "AI reads replies, answers questions, handles objections, and works toward booking."],
-                ["Trade-In Estimator", "AI asks for vehicle details and gives an instant ballpark offer — before they come in."],
+                ["Emergency Detection", "AI recognizes urgent situations — no heat, no AC, a leak — and escalates to your on-call team."],
                 ["SMS Follow-Up", "Reaches leads who only left a phone number. Same AI conversation, via text."],
-                ["VinSolutions & DealerSocket Integration", "Leads flow in automatically from your existing CRM. No manual entry."],
+                ["Appointment Booking & Reminders", "Books service calls into your schedule and sends automated reminders to cut no-shows."],
                 ["Gmail / Outlook Connected", "AI reads replies directly from your inbox. No forwarding, no extra setup."],
-                ["Hot Lead Alerts", "Salesperson is notified the moment a lead shows strong buying intent."],
+                ["Hot Lead Alerts", "Your team is notified the moment a customer is ready to book or has an urgent situation."],
                 ["Monthly Tuning & Optimization", "We review performance and adjust timing, tone, and sequences every month."],
               ].map(([title, desc]) => (
                 <div key={title} style={{ display: "flex", gap: 14, alignItems: "flex-start" }}>
@@ -127,7 +127,7 @@ export default function PricingPage() {
           One extra sale covers the cost.
         </h2>
         <p style={{ color: "rgba(255,255,255,0.6)", fontSize: "1rem", maxWidth: 560, margin: "0 auto 48px" }}>
-          The average dealership grosses $2,000–$4,000 per vehicle sale. Lugano pays for itself the moment one cold lead turns into a buyer.
+          The average service call generates $200–$500. Lugano pays for itself the moment a few cold leads turn into booked jobs.
         </p>
         <div style={{ display: "flex", justifyContent: "center", gap: 48, flexWrap: "wrap" }}>
           {[["$0", "Cost per lead followed up"], ["10 min", "First email after missed call"], ["24/7", "AI availability, including weekends"], ["100%", "Of leads followed up, every time"]].map(([stat, label]) => (
@@ -144,12 +144,12 @@ export default function PricingPage() {
         <div style={{ maxWidth: 680, margin: "0 auto" }}>
           <h2 style={{ fontSize: "clamp(1.5rem,3vw,2rem)", fontWeight: 800, letterSpacing: "-.02em", marginBottom: 48, textAlign: "center" }}>Common questions</h2>
           {[
-            ["What does the $1,000 setup fee cover?", "It covers our time to configure the AI around your dealership — connecting your Gmail or Outlook, setting up your sequences and tone, integrating with your CRM, and making sure everything is tested before we go live. It's typically 3–5 hours of hands-on setup."],
-            ["How long does setup take?", "Most dealerships are live within 5–10 business days from signing. We move fast."],
-            ["Do I need to change my existing CRM or phone system?", "No. We plug in alongside VinSolutions, DealerSocket, and other CRMs via email forwarding. No installs, no IT department required."],
+            ["What does the setup fee cover?", "It covers our time to configure the AI around your business — connecting your phone and email, setting up your follow-up sequences and tone, and making sure everything is tested before we go live. Typically 3–5 hours of hands-on setup."],
+            ["How long does setup take?", "Most businesses are live within 5–10 business days from signing. We move fast."],
+            ["Do I need to change my existing phone system or scheduling software?", "No. We connect to your existing email and phone system. No installs, no IT department required."],
             ["Can I cancel anytime?", "Yes — month-to-month. No long-term contracts. If you need to pause or cancel, just email us."],
             ["What happens when a customer replies?", "The AI reads the reply and responds naturally — answering questions, handling objections, and working toward a booked appointment. Your team only gets involved when a buyer is ready to come in."],
-            ["Do you work with multi-rooftop dealer groups?", "Yes. Each rooftop gets its own configuration. Contact us for group pricing."],
+            ["Do you work with companies that have multiple locations?", "Yes. Each location gets its own configuration. Contact us for group pricing."],
           ].map(([q, a]) => (
             <div key={q as string} className="faq-item">
               <p style={{ fontWeight: 700, color: "var(--text-primary)", marginBottom: 10, fontSize: ".95rem" }}>{q}</p>
