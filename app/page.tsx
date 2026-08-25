@@ -154,12 +154,12 @@ export default function Page() {
 
         <div style={{display:"inline-flex",alignItems:"center",gap:8,background:"rgba(255,255,255,0.1)",border:"1px solid rgba(255,255,255,0.15)",color:"var(--blue-100)",fontSize:".8rem",fontWeight:600,letterSpacing:".08em",textTransform:"uppercase",padding:"6px 16px",borderRadius:100,marginBottom:28,backdropFilter:"blur(8px)",opacity:0,animation:"fadeUp .8s .2s ease forwards"}}>
           <span style={{width:6,height:6,borderRadius:"50%",background:"#4B82E8",animation:"pulse 2s infinite"}}/>
-          AI Automation for US Car Dealerships
+          AI Automation for HVAC, Plumbing & Electrical Companies
         </div>
 
         <h1 style={{fontSize:"clamp(2.5rem,6vw,5.5rem)",fontWeight:800,letterSpacing:"-.03em",lineHeight:1.06,color:"var(--white)",maxWidth:960,opacity:0,animation:"fadeUp .9s .4s ease forwards"}}>
-          Your dealership's{" "}
-          <em style={{fontStyle:"normal",color:"var(--blue-200)"}}>AI sales assistant.</em>
+          Your company's AI dispatcher{" "}
+          <em style={{fontStyle:"normal",color:"var(--blue-200)"}}>for every incoming lead.</em>
         </h1>
 
         <p style={{fontSize:"clamp(1rem,2vw,1.25rem)",lineHeight:1.65,color:"rgba(255,255,255,0.65)",maxWidth:600,margin:"24px auto 0",opacity:0,animation:"fadeUp .9s .6s ease forwards"}}>
@@ -174,7 +174,7 @@ export default function Page() {
         <div style={{display:"flex",gap:48,marginTop:72,flexWrap:"wrap",justifyContent:"center",opacity:0,animation:"fadeUp .9s 1s ease forwards"}}>
           <div style={{textAlign:"center"}}>
             <span style={{fontSize:"2.2rem",fontWeight:800,color:"var(--white)",letterSpacing:"-.03em",display:"block"}}>3</span>
-            <span style={{fontSize:".8rem",color:"rgba(255,255,255,0.5)",marginTop:2,letterSpacing:".04em"}}>Services built for dealerships</span>
+            <span style={{fontSize:".8rem",color:"rgba(255,255,255,0.5)",marginTop:2,letterSpacing:".04em"}}>Services built for home service companies</span>
           </div>
           <div className="hero-divider" style={{width:1,height:48,background:"rgba(255,255,255,0.15)",alignSelf:"center"}}/>
           <div style={{textAlign:"center"}}>
@@ -199,8 +199,8 @@ export default function Page() {
         <div className="two-col">
           <div>
             <span className="section-eyebrow reveal">The Problem</span>
-            <h2 className="section-title reveal reveal-delay-1">Most leads <em>go cold</em> before anyone calls back.</h2>
-            <p className="section-sub reveal reveal-delay-2">Your sales team is busy with floor customers. Meanwhile, the leads from your website, missed calls, and AutoTrader just sit there. By the time someone follows up, that buyer is at the dealer down the street. Lugano deploys an AI that follows up every single one: instantly, personally, and around the clock.</p>
+            <h2 className="section-title reveal reveal-delay-1">Most leads go to whoever calls back first <em>and it's often not you.</em></h2>
+            <p className="section-sub reveal reveal-delay-2">Your sales team is busy with floor customers. Meanwhile, the leads from your website, Google, and missed calls just sit there. By the time someone follows up, that customer already called the next company. Lugano deploys an AI that follows up every single one: instantly, personally, and around the clock.</p>
             <ul style={{listStyle:"none",marginTop:28,display:"flex",flexDirection:"column",gap:12}}>
               {[
                 "Every lead followed up in minutes, nights, weekends, and holidays",
@@ -222,7 +222,7 @@ export default function Page() {
             <div style={{fontSize:".75rem",fontWeight:700,letterSpacing:".1em",textTransform:"uppercase",color:"var(--blue-200)",marginBottom:16,position:"relative"}}>How It Works</div>
             <div style={{display:"flex",flexDirection:"column",gap:14,position:"relative"}}>
               {[
-                {n:1,t:"Lead comes in",s:"Website, Facebook, AutoTrader, phone",active:false,faded:false},
+                {n:1,t:"Lead comes in",s:"Website, Google, phone, text",active:false,faded:false},
                 {n:2,t:"Personal follow-up sent",s:"SMS + email, day or night",active:false,faded:false},
                 {n:3,t:"Appointment booked",s:"Synced to your calendar automatically",active:true,faded:false},
                 {n:4,t:"CRM updated automatically",s:"Zero manual entry for your team",active:false,faded:true},
@@ -260,13 +260,13 @@ export default function Page() {
               <em style={{fontStyle:"normal",color:"var(--blue-400)"}}>buys from your competitor</em>
             </h2>
             <p style={{fontSize:"1rem",lineHeight:1.75,color:"var(--text-secondary)",marginTop:18}} className="reveal reveal-delay-2">
-              Most dealerships only follow up with the hottest leads and let the rest go cold. Lugano makes sure every single buyer gets a personal, timely response, whether it&apos;s 2pm or 2am.
+              Most companies only follow up with the hottest leads and let the rest go cold. Lugano makes sure every single customer gets a personal, timely response.
             </p>
             <ul style={{listStyle:"none",marginTop:24,display:"flex",flexDirection:"column",gap:12}}>
               {[
                 "Handles the full back-and-forth conversation not just a one-time email blast",
-                "Detects buying intent and alerts your team the moment someone is ready to move",
-                "Works across every lead source: website, Facebook, AutoTrader, missed calls, and more",
+                "Detects urgency and alerts your team the moment someone needs help now",
+                "Works across every lead source: website, Google, missed calls, and more",
               ].map((text, i) => (
                 <li key={i} className={`reveal reveal-delay-${i + 3}`} style={{display:"flex",alignItems:"flex-start",gap:12,fontSize:".95rem",color:"var(--text-secondary)",lineHeight:1.55}}>
                   <span className="check-icon">
@@ -289,9 +289,9 @@ export default function Page() {
           <div className="centered" style={{marginBottom:56}}>
             <span className="section-eyebrow reveal">See It In Action</span>
             <h2 className="section-title reveal reveal-delay-1">
-              This is what your leads <em>actually experience</em>
+              This is what your customers <em>actually experience</em>
             </h2>
-            <p className="section-sub reveal reveal-delay-2">A real conversation from first contact to trade-in estimate. No templates. No scripts. Just the AI working.</p>
+            <p className="section-sub reveal reveal-delay-2">A real conversation from first contact to booked appointment. No templates. No scripts. Just the AI working.</p>
           </div>
 
           <div className="reveal-scale" style={{background:"var(--gray-50)",border:"1px solid var(--gray-100)",borderRadius:24,overflow:"hidden",maxWidth:480,margin:"0 auto",boxShadow:"0 20px 60px rgba(4,13,26,0.08)"}}>
@@ -301,8 +301,8 @@ export default function Page() {
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.7)" strokeWidth="1.8"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
               </div>
               <div>
-                <div style={{color:"#fff",fontSize:".875rem",fontWeight:600}}>Prestige Auto Group</div>
-                <div style={{color:"rgba(255,255,255,0.45)",fontSize:".72rem"}}>AI Sales Assistant</div>
+                <div style={{color:"#fff",fontSize:".875rem",fontWeight:600}}>[Business Name]</div>
+                <div style={{color:"rgba(255,255,255,0.45)",fontSize:".72rem"}}>AI Service Assistant</div>
               </div>
             </div>
 
@@ -312,35 +312,35 @@ export default function Page() {
               {/* Outbound — first contact */}
               <div style={{display:"flex",justifyContent:"flex-end"}}>
                 <div style={{background:"#1246A8",color:"#fff",borderRadius:"18px 18px 4px 18px",padding:"10px 14px",maxWidth:"80%",fontSize:".875rem",lineHeight:1.5}}>
-                  Hi Marcus, we saw your inquiry about the 2026 BMW M4 Competition. Are you still looking, and did you have a color preference in mind?
+                  Hi Mike, thanks for reaching out about your AC — sounds like it's not cooling. Can you tell me a bit more about what's going on?
                 </div>
               </div>
 
               {/* Inbound — customer reply */}
               <div style={{display:"flex",justifyContent:"flex-start"}}>
                 <div style={{background:"var(--gray-50)",border:"1px solid var(--gray-100)",color:"var(--text-primary)",borderRadius:"18px 18px 18px 4px",padding:"10px 14px",maxWidth:"80%",fontSize:".875rem",lineHeight:1.5}}>
-                  Yeah still interested. Carbon Black if you have it. I'd also need to trade in my current car.
+                  Yeah it's blowing warm air, been like that since this morning. It's pretty hot in here.
                 </div>
               </div>
 
-              {/* Outbound — trade-in response */}
+              {/* Outbound — follow-up */}
               <div style={{display:"flex",justifyContent:"flex-end"}}>
                 <div style={{background:"#1246A8",color:"#fff",borderRadius:"18px 18px 4px 18px",padding:"10px 14px",maxWidth:"85%",fontSize:".875rem",lineHeight:1.5}}>
-                  Carbon Black is a great choice on the M4. What are you trading in? If you can share the year, make, model, and mileage I can get you a ballpark number.
+                  That sounds urgent — would you like us to get someone out to you as soon as possible?
                 </div>
               </div>
 
-              {/* Inbound — trade-in details */}
+              {/* Inbound — customer reply */}
               <div style={{display:"flex",justifyContent:"flex-start"}}>
                 <div style={{background:"var(--gray-50)",border:"1px solid var(--gray-100)",color:"var(--text-primary)",borderRadius:"18px 18px 18px 4px",padding:"10px 14px",maxWidth:"80%",fontSize:".875rem",lineHeight:1.5}}>
-                  2021 Mustang GT. Around 28,000 miles. Good condition.
+                  Yes please, today if you can
                 </div>
               </div>
 
-              {/* Outbound — trade-in estimate */}
+              {/* Outbound — dispatch response */}
               <div style={{display:"flex",justifyContent:"flex-end"}}>
                 <div style={{background:"#1246A8",color:"#fff",borderRadius:"18px 18px 4px 18px",padding:"10px 14px",maxWidth:"85%",fontSize:".875rem",lineHeight:1.5}}>
-                  Based on current market, a 2021 Mustang GT with 28k miles typically comes in around <strong style={{color:"#C5D8FF"}}>$31,500 to $33,000</strong> as a dealer trade. Final number depends on a quick appraisal. Want to come in this week and we can firm it up?
+                  Got it — connecting you with our dispatch team right now, they'll call you within a few minutes to get someone out today.
                 </div>
               </div>
 
@@ -348,7 +348,7 @@ export default function Page() {
 
             {/* Footer note */}
             <div style={{background:"var(--gray-50)",borderTop:"1px solid var(--gray-100)",padding:"12px 20px",fontSize:".78rem",color:"var(--text-muted)",textAlign:"center"}}>
-              Fully automated. No salesperson involved yet.
+              Fully automated. No dispatcher involved yet.
             </div>
           </div>
         </div>
@@ -357,8 +357,8 @@ export default function Page() {
       {/* SERVICES */}
       <section id="services" style={{padding:"var(--section-gap) 5%",background:"var(--gray-50)"}}>
         <div className="centered">
-          <h2 className="section-title reveal reveal-delay-1" style={{marginTop:0}}>What we deploy <em>for your store</em></h2>
-          <p className="section-sub reveal reveal-delay-2">Three fully managed AI systems that work around the clock so your team can focus on selling.</p>
+          <h2 className="section-title reveal reveal-delay-1" style={{marginTop:0}}>What we deploy <em>for your business</em></h2>
+          <p className="section-sub reveal reveal-delay-2">Three fully managed AI systems that work around the clock so your team can focus on the work.</p>
         </div>
         <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(300px,1fr))",gap:20,marginTop:60,maxWidth:1160,marginLeft:"auto",marginRight:"auto"}}>
           <div className="service-card reveal reveal-delay-1">
@@ -391,9 +391,9 @@ export default function Page() {
                 <path d="M3 9h18M9 21V9"/>
               </svg>
             </div>
-            <h3 style={{fontSize:"1.2rem",fontWeight:700,letterSpacing:"-.01em",marginBottom:10}}>CRM Integration &amp; Automation</h3>
+            <h3 style={{fontSize:"1.2rem",fontWeight:700,letterSpacing:"-.01em",marginBottom:10}}>Emergency Detection &amp; Routing</h3>
             <p style={{fontSize:".95rem",lineHeight:1.7,color:"var(--text-secondary)"}}>Every conversation is automatically logged and synced. Lead stages update themselves. The right salesperson gets notified at exactly the right moment. Plugs into VinSolutions, DealerSocket, and more without replacing your existing stack.</p>
-            <span className="service-tag">Zero Manual Entry</span>
+            <span className="service-tag">Never Miss an Urgent Call</span>
           </div>
         </div>
       </section>
@@ -410,19 +410,19 @@ export default function Page() {
             <span style={{fontSize:".75rem",fontWeight:700,letterSpacing:".12em",textTransform:"uppercase",color:"var(--blue-300)",marginBottom:20,display:"block"}}>Step 01</span>
             <div className="step-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--blue-200)" strokeWidth="1.8"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div>
             <h3 style={{fontSize:"1.1rem",fontWeight:700,color:"var(--white)",marginBottom:10,letterSpacing:"-.01em",opacity:1}}>Strategy Call</h3>
-            <p style={{fontSize:".9rem",lineHeight:1.65,color:"rgba(255,255,255,0.75)"}}>We spend 30 minutes learning your store — how leads come in, how your team follows up, and where deals are falling through the cracks.</p>
+            <p style={{fontSize:".9rem",lineHeight:1.65,color:"rgba(255,255,255,0.75)"}}>We spend 30 minutes learning your business — how leads come in, how your team follows up, and where jobs are falling through the cracks.</p>
           </div>
           <div className="hiw-step reveal reveal-delay-2">
             <span style={{fontSize:".75rem",fontWeight:700,letterSpacing:".12em",textTransform:"uppercase",color:"var(--blue-300)",marginBottom:20,display:"block"}}>Step 02</span>
             <div className="step-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--blue-200)" strokeWidth="1.8"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"/></svg></div>
             <h3 style={{fontSize:"1.1rem",fontWeight:700,color:"var(--white)",marginBottom:10,letterSpacing:"-.01em",opacity:1}}>Custom Build</h3>
-            <p style={{fontSize:".9rem",lineHeight:1.65,color:"rgba(255,255,255,0.75)"}}>We configure the AI around your brand — your tone, your vehicles, your follow-up timing. It sounds like your best salesperson, not a robot.</p>
+            <p style={{fontSize:".9rem",lineHeight:1.65,color:"rgba(255,255,255,0.75)"}}>We configure the AI around your business — your tone, your services, your follow-up timing. It sounds like your best dispatcher, not a robot.</p>
           </div>
           <div className="hiw-step reveal reveal-delay-3">
             <span style={{fontSize:".75rem",fontWeight:700,letterSpacing:".12em",textTransform:"uppercase",color:"var(--blue-300)",marginBottom:20,display:"block"}}>Step 03</span>
             <div className="step-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--blue-200)" strokeWidth="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
             <h3 style={{fontSize:"1.1rem",fontWeight:700,color:"var(--white)",marginBottom:10,letterSpacing:"-.01em",opacity:1}}>Integration &amp; Testing</h3>
-            <p style={{fontSize:".9rem",lineHeight:1.65,color:"rgba(255,255,255,0.75)"}}>We connect to your CRM, Gmail, and website. We run test conversations end-to-end and don't go live until everything is exactly right.</p>
+            <p style={{fontSize:".9rem",lineHeight:1.65,color:"rgba(255,255,255,0.75)"}}>We connect to your phone, email, and website. We run test conversations end-to-end and don't go live until everything is exactly right.</p>
           </div>
           <div className="hiw-step reveal reveal-delay-4">
             <span style={{fontSize:".75rem",fontWeight:700,letterSpacing:".12em",textTransform:"uppercase",color:"var(--blue-300)",marginBottom:20,display:"block"}}>Step 04</span>
@@ -443,7 +443,7 @@ export default function Page() {
               <em style={{fontStyle:"normal",color:"var(--blue-400)"}}>actually show up</em>
             </h2>
             <p style={{fontSize:"1rem",lineHeight:1.75,color:"var(--text-secondary)",marginTop:18}} className="reveal reveal-delay-2">
-              A no-show is money walked out the door. Our automated reminder system keeps buyers engaged from the moment they book to the moment they arrive.
+              A no-show is a wasted truck roll and a lost afternoon. Our automated reminder system keeps customers engaged from the moment they book to the moment your tech arrives.
             </p>
             <ul style={{listStyle:"none",marginTop:24,display:"flex",flexDirection:"column",gap:12}}>
               {[
@@ -486,7 +486,7 @@ export default function Page() {
         <div style={{position:"absolute",inset:0,background:"radial-gradient(circle at 50% 50%,rgba(36,96,208,0.3) 0%,transparent 65%)"}}/>
         <span className="section-eyebrow reveal" style={{position:"relative",color:"var(--blue-200)"}}>Let&apos;s Talk</span>
         <h2 className="section-title centered reveal reveal-delay-1" style={{color:"var(--white)",maxWidth:740,position:"relative",margin:"0 auto",textAlign:"center"}}>
-          Ready to stop <em style={{fontStyle:"normal",color:"var(--blue-200)"}}>leaving money on the table?</em>
+          Ready to stop <em style={{fontStyle:"normal",color:"var(--blue-200)"}}>losing jobs to a slow callback?</em>
         </h2>
         <p className="section-sub centered reveal reveal-delay-2" style={{color:"rgba(255,255,255,0.6)",position:"relative",margin:"24px auto 0",textAlign:"center"}}>
           Reach out any way that works for you. We&apos;ll set up a free strategy call to walk through exactly what Lugano can do for your store.
