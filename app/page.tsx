@@ -163,7 +163,7 @@ export default function Page() {
         </h1>
 
         <p style={{fontSize:"clamp(1rem,2vw,1.25rem)",lineHeight:1.65,color:"rgba(255,255,255,0.65)",maxWidth:600,margin:"24px auto 0",opacity:0,animation:"fadeUp .9s .6s ease forwards"}}>
-          Lugano handles the entire conversation from missed call to booked appointment. The AI follows up, answers questions, handles objections, and gets them in the door. Your team steps in when they&apos;re ready to buy.
+          Lugano handles the entire conversation from first contact to booked appointment — by phone, text, or email. The AI responds instantly, answers questions, and gets the job on the calendar. Your team steps in when it&apos;s time to do the work.
         </p>
 
         <div style={{display:"flex",gap:14,marginTop:44,flexWrap:"wrap",justifyContent:"center",opacity:0,animation:"fadeUp .9s .8s ease forwards"}}>
@@ -203,7 +203,7 @@ export default function Page() {
             <p className="section-sub reveal reveal-delay-2">Your sales team is busy with floor customers. Meanwhile, the leads from your website, Google, and missed calls just sit there. By the time someone follows up, that customer already called the next company. Lugano deploys an AI that follows up every single one: instantly, personally, and around the clock.</p>
             <ul style={{listStyle:"none",marginTop:28,display:"flex",flexDirection:"column",gap:12}}>
               {[
-                "Every lead followed up in minutes, nights, weekends, and holidays",
+                "Every lead followed up in minutes — by phone, text, or email, nights, weekends, and holidays",
                 "AI handles the full back-and-forth your team only talks to buyers who are ready",
                 "Fully managed setup We configure everything, you see results",
               ].map((text, i) => (
@@ -350,6 +350,7 @@ export default function Page() {
             <div style={{background:"var(--gray-50)",borderTop:"1px solid var(--gray-100)",padding:"12px 20px",fontSize:".78rem",color:"var(--text-muted)",textAlign:"center"}}>
               Fully automated. No dispatcher involved yet.
             </div>
+            {/* TODO: Add voice call demo transcript or audio example here when ready */}
           </div>
         </div>
       </section>
@@ -367,8 +368,8 @@ export default function Page() {
                 <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
               </svg>
             </div>
-            <h3 style={{fontSize:"1.2rem",fontWeight:700,letterSpacing:"-.01em",marginBottom:10}}>Lead Follow-Up — SMS &amp; Email</h3>
-            <p style={{fontSize:".95rem",lineHeight:1.7,color:"var(--text-secondary)"}}>Every inbound lead gets a personal, conversational follow-up by text and email. Your buyers feel like they&apos;re talking to someone on your team — because they essentially are. We handle the entire back-and-forth until they&apos;re ready to come in.</p>
+            <h3 style={{fontSize:"1.2rem",fontWeight:700,letterSpacing:"-.01em",marginBottom:10}}>AI Voice &amp; Lead Follow-Up</h3>
+            <p style={{fontSize:".95rem",lineHeight:1.7,color:"var(--text-secondary)"}}>Every inbound call and lead gets an instant, natural conversation — by phone, text, or email. The AI answers questions, handles the back-and-forth, and books the appointment directly onto your schedule, so no lead goes unanswered no matter how it comes in.</p>
             <span className="service-tag">Core Service</span>
           </div>
           <div className="service-card reveal reveal-delay-2">
@@ -543,7 +544,7 @@ export default function Page() {
           <div>
             <h4 style={{fontSize:".8rem",fontWeight:700,letterSpacing:".08em",textTransform:"uppercase",color:"var(--white)",marginBottom:16}}>Services</h4>
             <ul style={{listStyle:"none",display:"flex",flexDirection:"column",gap:10}}>
-              {["Lead Follow-Up (SMS & Email)","Appointment Booking","CRM Automation"].map(l => <li key={l}><a href="#services" style={{color:"rgba(255,255,255,0.5)",textDecoration:"none",fontSize:".875rem"}}>{l}</a></li>)}
+              {["AI Voice & Lead Follow-Up","Appointment Booking","Records & Scheduling Automation"].map(l => <li key={l}><a href="#services" style={{color:"rgba(255,255,255,0.5)",textDecoration:"none",fontSize:".875rem"}}>{l}</a></li>)}
             </ul>
           </div>
           <div>

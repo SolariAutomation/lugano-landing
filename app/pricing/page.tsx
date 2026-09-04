@@ -68,9 +68,9 @@ export default function PricingPage() {
           {/* Main card */}
           <div style={{ background: "var(--white)", border: "2px solid var(--blue)", borderRadius: 24, padding: "48px 40px", boxShadow: "0 20px 60px rgba(18,70,168,0.12)" }}>
             <div style={{ display: "inline-block", background: "var(--blue-50)", color: "var(--blue-400)", fontSize: ".75rem", fontWeight: 700, letterSpacing: ".08em", padding: "4px 12px", borderRadius: 100, marginBottom: 24 }}>STANDARD PACKAGE</div>
-            <h2 style={{ fontSize: "1.5rem", fontWeight: 800, color: "var(--text-primary)", marginBottom: 8 }}>Fully Managed AI Service Assistant</h2>
+            <h2 style={{ fontSize: "1.5rem", fontWeight: 800, color: "var(--text-primary)", marginBottom: 8 }}>Fully Managed AI Voice & Service Assistant</h2>
             <p style={{ color: "var(--text-secondary)", fontSize: ".95rem", lineHeight: 1.6, marginBottom: 32 }}>
-              We deploy, configure, and manage your AI follow-up system. Your team just does the work.
+              We deploy, configure, and manage your AI voice, text, and email follow-up system. Your team just does the work.
             </p>
 
             <div style={{ marginBottom: 32 }}>
