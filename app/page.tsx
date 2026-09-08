@@ -309,38 +309,45 @@ export default function Page() {
             {/* Messages */}
             <div style={{padding:"20px 16px",display:"flex",flexDirection:"column",gap:12,background:"var(--white)"}}>
 
-              {/* Outbound — first contact */}
-              <div style={{display:"flex",justifyContent:"flex-end"}}>
-                <div style={{background:"#1246A8",color:"#fff",borderRadius:"18px 18px 4px 18px",padding:"10px 14px",maxWidth:"80%",fontSize:".875rem",lineHeight:1.5}}>
-                  Hi Mike, thanks for reaching out about your AC — sounds like it's not cooling. Can you tell me a bit more about what's going on?
-                </div>
-              </div>
-
-              {/* Inbound — customer reply */}
+              {/* Customer asks a service question */}
               <div style={{display:"flex",justifyContent:"flex-start"}}>
-                <div style={{background:"var(--gray-50)",border:"1px solid var(--gray-100)",color:"var(--text-primary)",borderRadius:"18px 18px 18px 4px",padding:"10px 14px",maxWidth:"80%",fontSize:".875rem",lineHeight:1.5}}>
-                  Yeah it's blowing warm air, been like that since this morning. It's pretty hot in here.
+                <div style={{background:"var(--gray-50)",border:"1px solid var(--gray-100)",color:"var(--text-primary)",borderRadius:"18px 18px 18px 4px",padding:"10px 14px",maxWidth:"82%",fontSize:".875rem",lineHeight:1.5}}>
+                  Hi, my AC has been running all day but the house won&apos;t cool down. Not sure if it&apos;s a refrigerant issue or something else?
                 </div>
               </div>
 
-              {/* Outbound — follow-up */}
+              {/* AI answers the question */}
               <div style={{display:"flex",justifyContent:"flex-end"}}>
-                <div style={{background:"#1246A8",color:"#fff",borderRadius:"18px 18px 4px 18px",padding:"10px 14px",maxWidth:"85%",fontSize:".875rem",lineHeight:1.5}}>
-                  We have an opening tomorrow between 1pm and 4pm. Does that work for you?
+                <div style={{background:"#1246A8",color:"#fff",borderRadius:"18px 18px 4px 18px",padding:"10px 14px",maxWidth:"82%",fontSize:".875rem",lineHeight:1.5}}>
+                  That could be low refrigerant, a dirty coil, or a failing compressor — hard to say without a look. Our techs can usually diagnose it same day. How long has this been going on?
                 </div>
               </div>
 
-              {/* Inbound — customer reply */}
+              {/* Customer gives details */}
               <div style={{display:"flex",justifyContent:"flex-start"}}>
-                <div style={{background:"var(--gray-50)",border:"1px solid var(--gray-100)",color:"var(--text-primary)",borderRadius:"18px 18px 18px 4px",padding:"10px 14px",maxWidth:"80%",fontSize:".875rem",lineHeight:1.5}}>
-                  Yes, that works. What do I need to do?
+                <div style={{background:"var(--gray-50)",border:"1px solid var(--gray-100)",color:"var(--text-primary)",borderRadius:"18px 18px 18px 4px",padding:"10px 14px",maxWidth:"82%",fontSize:".875rem",lineHeight:1.5}}>
+                  About 2 days. It&apos;s an older unit, maybe 10 years old. Can someone come take a look?
                 </div>
               </div>
 
-              {/* Outbound — dispatch response */}
+              {/* AI offers appointment slots */}
               <div style={{display:"flex",justifyContent:"flex-end"}}>
-                <div style={{background:"#1246A8",color:"#fff",borderRadius:"18px 18px 4px 18px",padding:"10px 14px",maxWidth:"85%",fontSize:".875rem",lineHeight:1.5}}>
-                  Got it — connecting you with our dispatch team right now, they'll call you within a few minutes to get someone out today.
+                <div style={{background:"#1246A8",color:"#fff",borderRadius:"18px 18px 4px 18px",padding:"10px 14px",maxWidth:"82%",fontSize:".875rem",lineHeight:1.5}}>
+                  Absolutely. We have openings tomorrow — 8 to 11am or 1 to 4pm. Which works better?
+                </div>
+              </div>
+
+              {/* Customer picks + asks cost question */}
+              <div style={{display:"flex",justifyContent:"flex-start"}}>
+                <div style={{background:"var(--gray-50)",border:"1px solid var(--gray-100)",color:"var(--text-primary)",borderRadius:"18px 18px 18px 4px",padding:"10px 14px",maxWidth:"82%",fontSize:".875rem",lineHeight:1.5}}>
+                  Morning works. What does a diagnostic usually run?
+                </div>
+              </div>
+
+              {/* AI confirms booking and answers */}
+              <div style={{display:"flex",justifyContent:"flex-end"}}>
+                <div style={{background:"#1246A8",color:"#fff",borderRadius:"18px 18px 4px 18px",padding:"10px 14px",maxWidth:"82%",fontSize:".875rem",lineHeight:1.5}}>
+                  Diagnostic is $89, waived if you move forward with the repair. You&apos;re booked for tomorrow, 8–11am. You&apos;ll get a text reminder tonight and again in the morning.
                 </div>
               </div>
 

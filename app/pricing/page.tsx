@@ -61,61 +61,55 @@ export default function PricingPage() {
         </p>
       </section>
 
-      {/* Pricing card */}
+      {/* Pricing cards — two tiers */}
       <section style={{ padding: "80px 5%", background: "var(--gray-50)" }}>
-        <div style={{ maxWidth: 960, margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1fr", gap: 32, alignItems: "start" }}>
-
-          {/* Main card */}
-          <div style={{ background: "var(--white)", border: "2px solid var(--blue)", borderRadius: 24, padding: "48px 40px", boxShadow: "0 20px 60px rgba(18,70,168,0.12)" }}>
-            <div style={{ display: "inline-block", background: "var(--blue-50)", color: "var(--blue-400)", fontSize: ".75rem", fontWeight: 700, letterSpacing: ".08em", padding: "4px 12px", borderRadius: 100, marginBottom: 24 }}>STANDARD PACKAGE</div>
-            <h2 style={{ fontSize: "1.5rem", fontWeight: 800, color: "var(--text-primary)", marginBottom: 8 }}>Fully Managed AI Voice & Service Assistant</h2>
-            <p style={{ color: "var(--text-secondary)", fontSize: ".95rem", lineHeight: 1.6, marginBottom: 32 }}>
-              We deploy, configure, and manage your AI voice, text, and email follow-up system. Your team just does the work.
-            </p>
-
-            <div style={{ marginBottom: 32 }}>
-              <div style={{ display: "flex", alignItems: "baseline", gap: 8, marginBottom: 12 }}>
-                <span style={{ fontSize: "2.5rem", fontWeight: 800, color: "var(--text-primary)", letterSpacing: "-.03em" }}>$1,000</span>
-                <span style={{ color: "var(--text-muted)", fontSize: ".9rem" }}>one-time setup</span>
+        <div style={{ maxWidth: 900, margin: "0 auto" }}>
+          <p style={{ textAlign: "center", color: "var(--text-muted)", fontSize: ".9rem", marginBottom: 48 }}>
+            All plans include a <strong style={{color:"var(--text-primary)"}}>$750 one-time setup fee</strong> — covers configuration, onboarding, and testing before go-live.
+          </p>
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 24, alignItems: "start" }}>
+            {/* Tier 1 */}
+            <div style={{ background: "var(--white)", border: "1.5px solid var(--gray-100)", borderRadius: 24, padding: "40px 36px" }}>
+              <div style={{ display: "inline-block", background: "var(--blue-50)", color: "var(--blue-400)", fontSize: ".72rem", fontWeight: 700, letterSpacing: ".08em", padding: "4px 12px", borderRadius: 100, marginBottom: 20 }}>TEXT & EMAIL</div>
+              <h2 style={{ fontSize: "1.3rem", fontWeight: 800, color: "var(--text-primary)", marginBottom: 8 }}>AI Text & Email Follow-Up</h2>
+              <p style={{ color: "var(--text-secondary)", fontSize: ".9rem", lineHeight: 1.6, marginBottom: 28 }}>AI handles every lead by text and email — answers questions, books appointments, and follows up until the job is done.</p>
+              <div style={{ marginBottom: 28 }}>
+                <div style={{ display: "flex", alignItems: "baseline", gap: 6 }}>
+                  <span style={{ fontSize: "2.75rem", fontWeight: 800, color: "var(--text-primary)", letterSpacing: "-.03em" }}>$499</span>
+                  <span style={{ color: "var(--text-muted)", fontSize: ".9rem" }}>/month</span>
+                </div>
               </div>
-              <div style={{ display: "flex", alignItems: "baseline", gap: 8 }}>
-                <span style={{ fontSize: "2.5rem", fontWeight: 800, color: "var(--blue)", letterSpacing: "-.03em" }}>$1,500</span>
-                <span style={{ color: "var(--text-muted)", fontSize: ".9rem" }}>/month after that</span>
+              <a href="/#contact" style={{ display: "block", textAlign: "center", background: "var(--gray-50)", color: "var(--blue)", border: "1.5px solid var(--blue)", padding: "14px", borderRadius: 100, fontWeight: 700, fontSize: ".95rem", textDecoration: "none", marginBottom: 28 }}>Get Started</a>
+              <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+                {["AI-written follow-up by text and email","Full conversation handling and Q&A","Appointment booking and reminders","Gmail / Outlook inbox connected","Urgent situation detection and alerts","Monthly performance tuning"].map(f => (
+                  <div key={f} style={{ display: "flex", gap: 10, alignItems: "flex-start", fontSize: ".85rem", color: "var(--text-secondary)" }}>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--blue-400)" strokeWidth="2.5" style={{ flexShrink: 0, marginTop: 2 }}><polyline points="20 6 9 17 4 12"/></svg>
+                    {f}
+                  </div>
+                ))}
               </div>
             </div>
-
-            <a href="/#contact" style={{
-              display: "block", textAlign: "center", background: "var(--blue)", color: "#fff",
-              padding: "16px", borderRadius: 100, fontWeight: 700, fontSize: "1rem",
-              textDecoration: "none", marginBottom: 24,
-            }}>Book a Strategy Call</a>
-            <p style={{ fontSize: ".8rem", color: "var(--text-muted)", textAlign: "center" }}>No setup fee. No long-term contract. Cancel anytime.</p>
-          </div>
-
-          {/* What's included */}
-          <div>
-            <h3 style={{ fontSize: "1.1rem", fontWeight: 700, color: "var(--text-primary)", marginBottom: 24 }}>Everything included:</h3>
-            <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
-              {[
-                ["AI-Written Follow-Up Emails", "Every lead gets a personalized email within minutes — written by AI, not a template."],
-                ["Full Conversation Handling", "AI reads replies, answers questions, handles objections, and works toward booking."],
-                ["Emergency Detection", "AI recognizes urgent situations — no heat, no AC, a leak — and escalates to your on-call team."],
-                ["SMS Follow-Up", "Reaches leads who only left a phone number. Same AI conversation, via text."],
-                ["Appointment Booking & Reminders", "Books service calls into your schedule and sends automated reminders to cut no-shows."],
-                ["Gmail / Outlook Connected", "AI reads replies directly from your inbox. No forwarding, no extra setup."],
-                ["Hot Lead Alerts", "Your team is notified the moment a customer is ready to book or has an urgent situation."],
-                ["Monthly Tuning & Optimization", "We review performance and adjust timing, tone, and sequences every month."],
-              ].map(([title, desc]) => (
-                <div key={title} style={{ display: "flex", gap: 14, alignItems: "flex-start" }}>
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--blue-400)" strokeWidth="2.5" style={{ flexShrink: 0, marginTop: 2 }}>
-                    <polyline points="20 6 9 17 4 12"/>
-                  </svg>
-                  <div>
-                    <p style={{ fontSize: ".9rem", fontWeight: 600, color: "var(--text-primary)", marginBottom: 2 }}>{title}</p>
-                    <p style={{ fontSize: ".82rem", color: "var(--text-secondary)", lineHeight: 1.5 }}>{desc}</p>
-                  </div>
+            {/* Tier 2 — Voice */}
+            <div style={{ background: "var(--white)", border: "2px solid var(--blue)", borderRadius: 24, padding: "40px 36px", boxShadow: "0 20px 60px rgba(18,70,168,0.1)", position: "relative" }}>
+              <div style={{ position: "absolute", top: -13, left: "50%", transform: "translateX(-50%)", background: "var(--blue)", color: "#fff", fontSize: ".72rem", fontWeight: 700, letterSpacing: ".06em", padding: "4px 16px", borderRadius: 100 }}>MOST POPULAR</div>
+              <div style={{ display: "inline-block", background: "var(--blue-50)", color: "var(--blue-400)", fontSize: ".72rem", fontWeight: 700, letterSpacing: ".08em", padding: "4px 12px", borderRadius: 100, marginBottom: 20 }}>VOICE + TEXT + EMAIL</div>
+              <h2 style={{ fontSize: "1.3rem", fontWeight: 800, color: "var(--text-primary)", marginBottom: 8 }}>AI Voice & Full Follow-Up</h2>
+              <p style={{ color: "var(--text-secondary)", fontSize: ".9rem", lineHeight: 1.6, marginBottom: 28 }}>Everything in Text & Email, plus the AI answers inbound phone calls, handles the conversation, and books the appointment in real time.</p>
+              <div style={{ marginBottom: 28 }}>
+                <div style={{ display: "flex", alignItems: "baseline", gap: 6 }}>
+                  <span style={{ fontSize: "2.75rem", fontWeight: 800, color: "var(--blue)", letterSpacing: "-.03em" }}>$749</span>
+                  <span style={{ color: "var(--text-muted)", fontSize: ".9rem" }}>/month</span>
                 </div>
-              ))}
+              </div>
+              <a href="/#contact" style={{ display: "block", textAlign: "center", background: "var(--blue)", color: "#fff", padding: "14px", borderRadius: 100, fontWeight: 700, fontSize: ".95rem", textDecoration: "none", marginBottom: 28 }}>Get Started</a>
+              <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+                {["Everything in Text & Email","AI answers inbound phone calls","Real-time voice conversation and booking","Emergency call escalation and routing","After-hours call handling","Monthly performance tuning"].map(f => (
+                  <div key={f} style={{ display: "flex", gap: 10, alignItems: "flex-start", fontSize: ".85rem", color: "var(--text-secondary)" }}>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--blue-400)" strokeWidth="2.5" style={{ flexShrink: 0, marginTop: 2 }}><polyline points="20 6 9 17 4 12"/></svg>
+                    {f}
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
@@ -144,7 +138,7 @@ export default function PricingPage() {
         <div style={{ maxWidth: 680, margin: "0 auto" }}>
           <h2 style={{ fontSize: "clamp(1.5rem,3vw,2rem)", fontWeight: 800, letterSpacing: "-.02em", marginBottom: 48, textAlign: "center" }}>Common questions</h2>
           {[
-            ["Is there a setup fee?", "No — setup is included in your first month. We configure everything, connect your systems, and run test conversations before going live. No extra charge."],
+            ["Is there a setup fee?", "Yes — there's a one-time $750 setup fee regardless of which plan you choose. It covers configuration, connecting your systems, and testing everything before go-live."],
             ["How long does setup take?", "Most businesses are live within 5–10 business days from signing. We move fast."],
             ["Do I need to change my existing phone system or scheduling software?", "No. We connect to your existing email and phone system. No installs, no IT department required."],
             ["Can I cancel anytime?", "Yes — month-to-month. No long-term contracts. If you need to pause or cancel, just email us."],
