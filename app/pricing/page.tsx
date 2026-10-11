@@ -121,7 +121,7 @@ export default function PricingPage() {
           One extra sale covers the cost.
         </h2>
         <p style={{ color: "rgba(255,255,255,0.6)", fontSize: "1rem", maxWidth: 560, margin: "0 auto 48px" }}>
-          The average service call generates $200–$500. Lugano pays for itself the moment a few cold leads turn into booked jobs.
+          One booked job covers the cost. Lugano pays for itself the moment a few cold leads turn into scheduled appointments.
         </p>
         <div style={{ display: "flex", justifyContent: "center", gap: 48, flexWrap: "wrap" }}>
           {[["$0", "Cost per lead followed up"], ["10 min", "First email after missed call"], ["24/7", "AI availability, including weekends"], ["100%", "Of leads followed up, every time"]].map(([stat, label]) => (
@@ -142,7 +142,7 @@ export default function PricingPage() {
             ["How long does setup take?", "Most businesses are live within 5–10 business days from signing. We move fast."],
             ["Do I need to change my existing phone system or scheduling software?", "No. We connect to your existing email and phone system. No installs, no IT department required."],
             ["Can I cancel anytime?", "Yes — month-to-month. No long-term contracts. If you need to pause or cancel, just email us."],
-            ["What happens when a customer replies?", "The AI reads the reply and responds naturally — answering questions, handling objections, and working toward a booked appointment. Your team only gets involved when a buyer is ready to come in."],
+            ["What happens when a customer replies?", "The AI reads the reply and responds naturally — answering questions, handling objections, and working toward a booked appointment. Your team only gets involved when a buyer is ready to move forward."],
             ["Do you work with companies that have multiple locations?", "Yes. Each location gets its own configuration. Contact us for group pricing."],
           ].map(([q, a]) => (
             <div key={q as string} className="faq-item">

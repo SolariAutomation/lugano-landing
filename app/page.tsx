@@ -200,7 +200,7 @@ export default function Page() {
           <div>
             <span className="section-eyebrow reveal">The Problem</span>
             <h2 className="section-title reveal reveal-delay-1">Most leads go to whoever calls back first <em>and it's often not you.</em></h2>
-            <p className="section-sub reveal reveal-delay-2">Your sales team is busy with floor customers. Meanwhile, the leads from your website, Google, and missed calls just sit there. By the time someone follows up, that customer already called the next company. Lugano deploys an AI that follows up every single one: instantly, personally, and around the clock.</p>
+            <p className="section-sub reveal reveal-delay-2">Your team is tied up with current customers. Meanwhile, the leads from your website, Google, and missed calls just sit there. By the time someone follows up, that customer already called the next company. Lugano deploys an AI that follows up every single one: instantly, personally, and around the clock.</p>
             <ul style={{listStyle:"none",marginTop:28,display:"flex",flexDirection:"column",gap:12}}>
               {[
                 "Every lead followed up in minutes — by phone, text, or email, nights, weekends, and holidays",
@@ -389,7 +389,7 @@ export default function Page() {
               </svg>
             </div>
             <h3 style={{fontSize:"1.2rem",fontWeight:700,letterSpacing:"-.01em",marginBottom:10}}>Appointment Booking &amp; Reminders</h3>
-            <p style={{fontSize:".95rem",lineHeight:1.7,color:"var(--text-secondary)"}}>The system books test drives and service appointments directly into your team&apos;s calendar, then sends automated reminders to cut down no-shows. More appointments kept means more cars sold — simple as that.</p>
+            <p style={{fontSize:".95rem",lineHeight:1.7,color:"var(--text-secondary)"}}>The system books appointments directly into your team&apos;s calendar, then sends automated reminders to cut down no-shows. More appointments kept means more jobs completed — simple as that.</p>
             <span className="service-tag">Reduces No-Shows</span>
           </div>
           <div className="service-card reveal reveal-delay-3">
@@ -400,7 +400,7 @@ export default function Page() {
               </svg>
             </div>
             <h3 style={{fontSize:"1.2rem",fontWeight:700,letterSpacing:"-.01em",marginBottom:10}}>Emergency Detection &amp; Routing</h3>
-            <p style={{fontSize:".95rem",lineHeight:1.7,color:"var(--text-secondary)"}}>Every conversation is automatically logged and synced. Lead stages update themselves. The right salesperson gets notified at exactly the right moment. Plugs into VinSolutions, DealerSocket, and more without replacing your existing stack.</p>
+            <p style={{fontSize:".95rem",lineHeight:1.7,color:"var(--text-secondary)"}}>Every conversation is automatically logged and synced. Lead stages update themselves. The right team member gets notified at exactly the right moment. Plugs into your existing CRM and scheduling tools without replacing your stack.</p>
             <span className="service-tag">Never Miss an Urgent Call</span>
           </div>
         </div>
@@ -494,10 +494,10 @@ export default function Page() {
         <div style={{position:"absolute",inset:0,background:"radial-gradient(circle at 50% 50%,rgba(36,96,208,0.3) 0%,transparent 65%)"}}/>
         <span className="section-eyebrow reveal" style={{position:"relative",color:"var(--blue-200)"}}>Let&apos;s Talk</span>
         <h2 className="section-title centered reveal reveal-delay-1" style={{color:"var(--white)",maxWidth:740,position:"relative",margin:"0 auto",textAlign:"center"}}>
-          Ready to stop <em style={{fontStyle:"normal",color:"var(--blue-200)"}}>losing jobs to a slow callback?</em>
+          Ready to stop <em style={{fontStyle:"normal",color:"var(--blue-200)"}}>losing jobs to a slow response?</em>
         </h2>
         <p className="section-sub centered reveal reveal-delay-2" style={{color:"rgba(255,255,255,0.6)",position:"relative",margin:"24px auto 0",textAlign:"center"}}>
-          Reach out any way that works for you. We&apos;ll set up a free strategy call to walk through exactly what Lugano can do for your store.
+          Reach out any way that works for you. We&apos;ll set up a free strategy call to walk through exactly what Lugano can do for your business.
         </p>
 
         <div className="contact-form-inner reveal reveal-delay-2" style={{background:"var(--white)",borderRadius:24,padding:"52px 48px",maxWidth:680,margin:"64px auto 0",boxShadow:"0 32px 80px rgba(4,13,26,0.18)",position:"relative",textAlign:"left"}}>
@@ -541,7 +541,7 @@ export default function Page() {
         <div className="footer-top" style={{display:"grid",gridTemplateColumns:"2fr 1fr 1fr 1fr",gap:48,paddingBottom:48,borderBottom:"1px solid rgba(255,255,255,0.06)"}}>
           <div className="footer-brand">
             <div style={{fontSize:"1.2rem",fontWeight:800,color:"var(--white)",letterSpacing:"-.02em"}}>Lugano Automation</div>
-            <p style={{fontSize:".875rem",lineHeight:1.65,marginTop:10}}>AI automation built specifically for US car dealerships. We handle lead follow-up, appointment booking, and CRM sync so your team can focus on selling.</p>
+            <p style={{fontSize:".875rem",lineHeight:1.65,marginTop:10}}>AI automation built for home service companies. We handle lead follow-up, appointment booking, and scheduling so your team can focus on doing the work.</p>
             <div style={{marginTop:16,display:"flex",gap:12,flexWrap:"wrap"}}>
               <a href="tel:9253418041" style={{color:"var(--blue-200)",textDecoration:"none",fontSize:".875rem",fontWeight:600}}>(925) 341-8041</a>
               <span style={{color:"rgba(255,255,255,0.2)"}}>·</span>
@@ -594,7 +594,7 @@ function ContactForm() {
       lastName: (form.querySelector('#lname') as HTMLInputElement)?.value,
       email: (form.querySelector('#email') as HTMLInputElement)?.value,
       phone: (form.querySelector('#phone') as HTMLInputElement)?.value,
-      dealership: (form.querySelector('#dealership') as HTMLInputElement)?.value,
+      business: (form.querySelector('#business') as HTMLInputElement)?.value,
       volume: (form.querySelector('#volume') as HTMLSelectElement)?.value,
       message: (form.querySelector('#message') as HTMLTextAreaElement)?.value,
     };
@@ -624,9 +624,9 @@ function ContactForm() {
       <div className="form-grid" style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:18}}>
         <div><label style={labelStyle} htmlFor="fname">First Name</label><input id="fname" type="text" placeholder="Marcus" style={inputStyle} required/></div>
         <div><label style={labelStyle} htmlFor="lname">Last Name</label><input id="lname" type="text" placeholder="Reynolds" style={inputStyle}/></div>
-        <div><label style={labelStyle} htmlFor="email">Email</label><input id="email" type="email" placeholder="you@dealership.com" style={inputStyle} required/></div>
+        <div><label style={labelStyle} htmlFor="email">Email</label><input id="email" type="email" placeholder="you@yourbusiness.com" style={inputStyle} required/></div>
         <div><label style={labelStyle} htmlFor="phone">Phone</label><input id="phone" type="tel" placeholder="(555) 000-0000" style={inputStyle}/></div>
-        <div><label style={labelStyle} htmlFor="dealership">Dealership Name</label><input id="dealership" type="text" placeholder="Reynolds Ford" style={inputStyle} required/></div>
+        <div><label style={labelStyle} htmlFor="business">Business Name</label><input id="business" type="text" placeholder="Sunrise HVAC" style={inputStyle} required/></div>
         <div>
           <label style={labelStyle} htmlFor="volume">Monthly Lead Volume</label>
           <select id="volume" style={{...inputStyle,WebkitAppearance:"none" as const}}>
@@ -645,7 +645,7 @@ function ContactForm() {
       <button type="submit" disabled={loading || submitted} style={{width:"100%",marginTop:24,background:submitted?"#22C55E":"var(--blue)",color:"var(--white)",padding:"16px 32px",borderRadius:12,fontFamily:"inherit",fontSize:"1rem",fontWeight:700,border:"none",cursor:submitted?"default":"pointer",transition:"background .2s"}}>
         {submitted ? "✓ Message received. We'll be in touch shortly." : loading ? "Sending..." : "Send Message →"}
       </button>
-      <p style={{fontSize:".8rem",color:"var(--text-muted)",marginTop:14,textAlign:"center"}}>No spam. No pressure. Just a straight conversation about your store.</p>
+      <p style={{fontSize:".8rem",color:"var(--text-muted)",marginTop:14,textAlign:"center"}}>No spam. No pressure. Just a straight conversation about your business.</p>
     </form>
   );
 }
