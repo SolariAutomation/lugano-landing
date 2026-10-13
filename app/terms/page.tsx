@@ -25,7 +25,7 @@ export default function TermsPage() {
 
           <section>
             <h2 className="text-lg font-semibold text-gray-900 mb-3">2. Description of Service</h2>
-            <p>Lugano Automation is a software-as-a-service (SaaS) platform designed for automotive dealerships. The Service provides AI-assisted email follow-up sequences, lead management, team coordination tools, appointment tracking, and related features to help dealerships engage with prospective customers.</p>
+            <p>Lugano Automation is a software-as-a-service (SaaS) platform designed for small businesses. The Service provides AI-assisted email follow-up sequences, lead management, team coordination tools, appointment tracking, and related features to help businesses engage with prospective customers.</p>
             <p className="mt-3">We use third-party AI providers (including Anthropic) to generate email content. AI-generated content is provided as a starting point and may require human review. We do not guarantee that AI-generated emails will achieve any particular outcome.</p>
           </section>
 
@@ -42,7 +42,7 @@ export default function TermsPage() {
               <li>The CAN-SPAM Act and applicable email marketing regulations</li>
               <li>The Telephone Consumer Protection Act (TCPA) where applicable</li>
               <li>GDPR or other applicable data protection laws if you serve customers in those jurisdictions</li>
-              <li>All federal, state, and local laws governing automotive sales and customer communications</li>
+              <li>All federal, state, and local laws governing your industry and customer communications</li>
             </ul>
             <p className="mt-3">You may not use the Service to:</p>
             <ul className="list-disc pl-6 mt-3 space-y-2">

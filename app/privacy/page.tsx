@@ -19,7 +19,7 @@ export default function PrivacyPage() {
 
           <section>
             <h2 className="text-lg font-semibold text-gray-900 mb-3">1. Overview</h2>
-            <p>Lugano Automation (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) provides AI-powered lead follow-up software for automotive dealerships. This Privacy Policy explains how we collect, use, and protect information in connection with our Service at <a href="https://luganoautomation.com" className="text-blue-600 underline">luganoautomation.com</a> and <a href="https://app.luganoautomation.com" className="text-blue-600 underline">app.luganoautomation.com</a>.</p>
+            <p>Lugano Automation (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) provides AI-powered lead follow-up software for small businesses. This Privacy Policy explains how we collect, use, and protect information in connection with our Service at <a href="https://luganoautomation.com" className="text-blue-600 underline">luganoautomation.com</a> and <a href="https://app.luganoautomation.com" className="text-blue-600 underline">app.luganoautomation.com</a>.</p>
           </section>
 
           <section>
@@ -28,8 +28,8 @@ export default function PrivacyPage() {
             <h3 className="font-medium text-gray-900 mb-2 mt-4">Information you provide directly:</h3>
             <ul className="list-disc pl-6 space-y-2">
               <li><strong>Account information:</strong> Name, email address, password when you register</li>
-              <li><strong>Dealership information:</strong> Business name, phone number, website URLs</li>
-              <li><strong>Lead data:</strong> Customer names, email addresses, phone numbers, vehicle interests, and notes that you enter into the Service</li>
+              <li><strong>Business information:</strong> Business name, phone number, website URLs</li>
+              <li><strong>Lead data:</strong> Customer names, email addresses, phone numbers, service interests, and notes that you enter into the Service</li>
               <li><strong>Payment information:</strong> Processed by our payment provider; we do not store full card numbers</li>
             </ul>
 
@@ -53,7 +53,7 @@ export default function PrivacyPage() {
             <h2 className="text-lg font-semibold text-gray-900 mb-3">3. How We Use Information</h2>
             <ul className="list-disc pl-6 space-y-2">
               <li>Providing and operating the Service</li>
-              <li>Sending automated follow-up emails on behalf of your dealership</li>
+              <li>Sending automated follow-up emails on behalf of your business</li>
               <li>Monitoring connected email inboxes for customer replies (with your authorization)</li>
               <li>Generating AI-assisted email content using third-party AI providers</li>
               <li>Sending you service updates, security notices, and support communications</li>
@@ -61,7 +61,7 @@ export default function PrivacyPage() {
               <li>Complying with legal obligations</li>
             </ul>
             <p className="mt-3">We do not sell your data or your customers&apos; data to third parties. We do not use your Customer Data to train AI models without your explicit consent.</p>
-            <p className="mt-3"><strong>Mobile phone numbers and SMS consent:</strong> Mobile phone numbers and SMS opt-in consent collected through dealership lead forms are never sold, shared, or transferred to third parties for marketing purposes. This data is used solely to facilitate follow-up communications between the dealership and the customer who submitted the form. Mobile opt-in data and consent will not be shared with any third party.</p>
+            <p className="mt-3"><strong>Mobile phone numbers and SMS consent:</strong> Mobile phone numbers and SMS opt-in consent collected through business lead forms are never sold, shared, or transferred to third parties for marketing purposes. This data is used solely to facilitate follow-up communications between the business and the customer who submitted the form. Mobile opt-in data and consent will not be shared with any third party.</p>
           </section>
 
           <section>
